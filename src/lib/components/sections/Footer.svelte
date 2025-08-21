@@ -19,7 +19,7 @@
 						AI search intelligence built for e-commerce brands.
 					</p>
 					<div class="flex space-x-4">
-						<a href="#" class="text-muted-foreground hover:text-foreground transition-colors">
+						<a href="https://linkedin.com" class="text-muted-foreground hover:text-foreground transition-colors">
 							<Linkedin class="h-5 w-5" />
 						</a>
 						<a
@@ -38,8 +38,8 @@
 			<div class="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
 				<div class="text-muted-foreground text-sm">© 2025 Rix. All rights reserved.</div>
 				<div class="text-muted-foreground flex items-center space-x-6 text-sm">
-					<a href="#" class="hover:text-foreground transition-colors"> Privacy Policy </a>
-					<a href="#" class="hover:text-foreground transition-colors"> Terms of Service </a>
+					<a href="/privacy" class="hover:text-foreground transition-colors"> Privacy Policy </a>
+					<a href="/terms" class="hover:text-foreground transition-colors"> Terms of Service </a>
 				</div>
 			</div>
 		</div>
