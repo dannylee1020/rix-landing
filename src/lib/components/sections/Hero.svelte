@@ -83,19 +83,12 @@
 		<!-- Dashboard Preview -->
 		<div class="mx-auto mt-16 max-w-5xl">
 			<div class="relative">
-				<div
-					class="border-border/50 from-primary/10 to-secondary/10 aspect-video rounded-2xl border-2 bg-gradient-to-br shadow-2xl"
-				>
-					<div class="flex h-full items-center justify-center">
-						<div class="space-y-4 text-center">
-							<div
-								class="bg-primary/20 mx-auto flex h-16 w-16 items-center justify-center rounded-full"
-							>
-								<div class="bg-primary h-8 w-8 rounded-full"></div>
-							</div>
-							<p class="text-muted-foreground">Dashboard Preview Coming Soon</p>
-						</div>
-					</div>
+				<div class="border-border/50 aspect-[3/2] overflow-hidden rounded-2xl border-2 shadow-2xl">
+					<img
+						src="/dashboard-preview.png"
+						alt="Rix Dashboard Preview"
+						class="h-full w-full object-contain"
+					/>
 				</div>
 				<!-- Floating elements for visual interest -->
 				<div class="bg-primary/20 absolute -right-4 -top-4 h-8 w-8 rounded-full blur-sm"></div>

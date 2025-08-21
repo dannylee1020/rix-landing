@@ -19,11 +19,14 @@
 						AI search intelligence built for e-commerce brands.
 					</p>
 					<div class="flex space-x-4">
-						<a href="https://linkedin.com" class="text-muted-foreground hover:text-foreground transition-colors">
+						<a
+							href="https://linkedin.com"
+							class="text-muted-foreground hover:text-foreground transition-colors"
+						>
 							<Linkedin class="h-5 w-5" />
 						</a>
 						<a
-							href="mailto:hello@rix.com"
+							href="mailto:founders@tryrix.com"
 							class="text-muted-foreground hover:text-foreground transition-colors"
 						>
 							<Mail class="h-5 w-5" />

@@ -7,21 +7,23 @@
 >
 	<div class="container mx-auto flex h-16 max-w-screen-xl items-center justify-between px-4">
 		<!-- Logo -->
-		<div class="flex items-center space-x-2">
+		<a href="/" class="flex items-center space-x-2">
 			<div class="bg-primary flex h-8 w-8 items-center justify-center rounded-lg">
 				<span class="text-primary-foreground text-lg font-bold">R</span>
 			</div>
 			<span class="text-foreground text-xl font-bold">Rix</span>
-		</div>
+		</a>
 
 		<!-- Spacer for right alignment -->
 		<div class="flex-1"></div>
 
 		<!-- Talk to Us CTA -->
 		<div class="flex items-center">
-			<Button variant="default" size="sm" class="bg-black text-white hover:bg-gray-800"
-				>Talk to Us</Button
-			>
+			<a href="mailto:founders@tryrix.com">
+				<Button variant="default" size="sm" class="bg-black text-white hover:bg-gray-800"
+					>Talk to Us</Button
+				>
+			</a>
 		</div>
 	</div>
 </nav>
