@@ -3,6 +3,55 @@
 	import { Input } from '$lib/components/ui/input';
 	import { Card } from '$lib/components/ui/card';
 	import { ArrowRight, Eye, Search, BarChart3, TrendingUp } from '@lucide/svelte';
+
+	let email = '';
+	let isSubmitting = false;
+	let message = '';
+	let messageType: 'success' | 'error' | '' = '';
+
+	async function handleSubmit() {
+		if (!email.trim()) {
+			message = 'Please enter your email';
+			messageType = 'error';
+			return;
+		}
+
+		isSubmitting = true;
+		message = '';
+		messageType = '';
+
+		try {
+			const response = await fetch('/api/waitlist', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({ email: email.trim() }),
+			});
+
+			const result = await response.json();
+
+			if (response.ok) {
+				message = result.message || 'Successfully joined waitlist!';
+				messageType = 'success';
+				email = ''; // Clear the form
+			} else {
+				message = result.error || 'Something went wrong';
+				messageType = 'error';
+			}
+		} catch (error) {
+			message = 'Network error. Please try again.';
+			messageType = 'error';
+		} finally {
+			isSubmitting = false;
+		}
+	}
+
+	function handleKeyPress(event: KeyboardEvent) {
+		if (event.key === 'Enter') {
+			handleSubmit();
+		}
+	}
 </script>
 
 <section class="from-background to-muted/20 relative bg-gradient-to-b py-20 md:py-32">
@@ -23,12 +72,31 @@
 			<!-- Beta CTA -->
 			<div class="mx-auto mb-12 max-w-md">
 				<div class="flex flex-col gap-3 sm:flex-row">
-					<Input type="email" placeholder="Enter your email" class="h-12 flex-1 px-4 text-base" />
-					<Button size="lg" class="h-12 whitespace-nowrap px-8">
-						Join Beta
-						<ArrowRight class="ml-2 h-5 w-5" />
+					<Input 
+						type="email" 
+						placeholder="Enter your email" 
+						class="h-12 flex-1 px-4 text-base" 
+						bind:value={email}
+						onkeypress={handleKeyPress}
+						disabled={isSubmitting}
+					/>
+					<Button 
+						size="lg" 
+						class="h-12 whitespace-nowrap px-8" 
+						onclick={handleSubmit}
+						disabled={isSubmitting}
+					>
+						{isSubmitting ? 'Joining...' : 'Join Beta'}
+						{#if !isSubmitting}
+							<ArrowRight class="ml-2 h-5 w-5" />
+						{/if}
 					</Button>
 				</div>
+				{#if message}
+					<div class="mt-3 text-sm {messageType === 'success' ? 'text-green-600' : 'text-red-600'}">
+						{message}
+					</div>
+				{/if}
 			</div>
 		</div>
 
