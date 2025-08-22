@@ -1,0 +1,6 @@
+name = "rix-landing"
+compatibility_date = "2023-05-18"
+compatibility_flags = ["nodejs_compat"]
+
+[env.production]
+compatibility_flags = ["nodejs_compat"]
