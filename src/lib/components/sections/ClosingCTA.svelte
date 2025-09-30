@@ -1,12 +1,12 @@
 <script lang="ts">
 </script>
 
-<section class="bg-white py-20">
+<section class="bg-white pb-20 pt-60">
 	<div class="container mx-auto max-w-5xl px-6">
 		<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
 			<div class="p-4">
-				<h2 class="text-4xl font-semibold leading-tight text-gray-900">
-					Unlock The Opportunity<br />
+				<h2 class="text-5xl font-semibold leading-tight text-gray-900">
+					Unlock <br />The Opportunity<br />
 					<span class="text-gray-500">Hiding in AI Search</span>
 				</h2>
 			</div>

@@ -87,7 +87,7 @@
 						<img
 							src="/prompts.svg"
 							alt="Keyword intelligence dashboard showing high-impact keywords and search analytics"
-							class="h-auto w-full object-cover"
+							class="h-auto w-full scale-y-110 object-cover"
 						/>
 					</div>
 				</div>
