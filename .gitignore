@@ -79,3 +79,4 @@ playwright-report/
 playwright/.cache/
 
 todo.md
+.playwright-mcp

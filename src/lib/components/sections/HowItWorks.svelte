@@ -1,94 +1,108 @@
 <script lang="ts">
-	import { Card } from '$lib/components/ui/card';
-	import { Sparkles, LineChart, Users, Zap } from '@lucide/svelte';
 </script>
 
-<section id="value-prop" class="bg-muted/20 py-16">
-	<div class="container mx-auto max-w-screen-xl px-4">
-		<!-- Section Header -->
-		<div class="mb-12 text-center">
-			<h2 class="text-foreground mb-4 text-2xl font-bold md:text-3xl">
-				Optimize your brand for AI
-				<p class="text-muted-foreground text-md mx-auto mt-3 max-w-xl text-base">
-					Turn AI search intelligence into your competitive advantage
-				</p>
-			</h2>
-		</div>
-
+<section class="bg-white py-24">
+	<div class="container mx-auto max-w-5xl px-6">
 		<!-- Features -->
-		<div class="mx-auto max-w-5xl">
-			<div class="grid gap-8 md:grid-cols-2">
-				<!-- Trend Analysis -->
-				<Card class="border-border p-6 transition-shadow hover:shadow-lg">
-					<div class="text-left">
-						<!-- Icon -->
-						<div class="mb-4">
-							<div class="flex h-16 w-16 items-center justify-center rounded-xl bg-green-500/10">
-								<LineChart class="h-8 w-8 text-green-600" />
-							</div>
-						</div>
-
+		<div class="space-y-32">
+			<!-- Feature 1: Content Left, Image Right -->
+			<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+				<div class="order-2 lg:order-1">
+					<div class="p-4">
 						<!-- Content -->
-						<h3 class="text-foreground mb-2 text-lg font-semibold">Trend Observability</h3>
-						<p class="text-muted-foreground text-sm leading-relaxed">
-							Monitor AI recommendation shifts and spot emerging trends.
+						<h3 class="mb-6 text-4xl font-semibold leading-tight text-gray-900">
+							Track Your Brand's Visibility in Real-Time
+						</h3>
+						<p class="text-lg leading-relaxed text-gray-600">
+							Monitor AI recommendation shifts and spot emerging trends before your competition
+							does.
 						</p>
 					</div>
-				</Card>
-				<!-- Keyword Intelligence -->
-				<Card class="border-border p-6 transition-shadow hover:shadow-lg">
-					<div class="text-left">
-						<!-- Icon -->
-						<div class="mb-4">
-							<div class="bg-primary/10 flex h-16 w-16 items-center justify-center rounded-xl">
-								<Sparkles class="text-primary h-8 w-8" />
-							</div>
-						</div>
+				</div>
+				<!-- Image -->
+				<div class="order-1 lg:order-2">
+					<div class="overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
+						<img
+							src="/trend.png"
+							alt="AI trend monitoring dashboard showing recommendation shifts and emerging patterns"
+							class="h-auto w-full object-cover"
+						/>
+					</div>
+				</div>
+			</div>
 
+			<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+				<!-- Image -->
+				<div class="order-1">
+					<div class="overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
+						<img
+							src="/source.svg"
+							alt="Source mapping dashboard showing where AI models source brand information and data gaps"
+							class="h-auto w-full object-cover"
+						/>
+					</div>
+				</div>
+				<div class="order-2">
+					<div class="p-4">
 						<!-- Content -->
-						<h3 class="text-foreground mb-2 text-lg font-semibold">Keyword Intelligence</h3>
-						<p class="text-muted-foreground text-sm leading-relaxed">
-							Track high-converting keywords and discover untapped search terms.
+						<h3 class="mb-6 text-4xl font-semibold leading-tight text-gray-900">
+							Understand Where AI Gets Your Brand Information
+						</h3>
+						<p class="text-lg leading-relaxed text-gray-600">
+							Discover where LLMs source your brand data and identify content gaps to boost
+							visibility.
 						</p>
 					</div>
-				</Card>
+				</div>
+			</div>
 
-				<!-- Competitive Analysis -->
-				<Card class="border-border p-6 transition-shadow hover:shadow-lg">
-					<div class="text-left">
-						<!-- Icon -->
-						<div class="mb-4">
-							<div class="flex h-16 w-16 items-center justify-center rounded-xl bg-blue-500/10">
-								<Users class="h-8 w-8 text-blue-600" />
-							</div>
-						</div>
-
+			<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+				<div class="order-2 lg:order-1">
+					<div class="p-4">
 						<!-- Content -->
-						<h3 class="text-foreground mb-2 text-lg font-semibold">Competitive Analysis</h3>
-						<p class="text-muted-foreground text-sm leading-relaxed">
-							Compare visibility against competitors and find opportunities to outrank.
+						<h3 class="mb-6 text-4xl font-semibold leading-tight text-gray-900">
+							Benchmark Your AI Visibility Against Competitors
+						</h3>
+						<p class="text-lg leading-relaxed text-gray-600">
+							Compare visibility against competitors and find opportunities to outrank them.
 						</p>
 					</div>
-				</Card>
+				</div>
+				<!-- Image -->
+				<div class="order-1 lg:order-2">
+					<div class="overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
+						<img
+							src="/competitor.svg"
+							alt="Competitive analysis dashboard showing AI visibility benchmarks and competitor rankings"
+							class="h-auto w-full object-cover"
+						/>
+					</div>
+				</div>
+			</div>
 
-				<!-- Source Analysis -->
-				<Card class="border-border p-6 transition-shadow hover:shadow-lg">
-					<div class="text-left">
-						<!-- Icon -->
-						<div class="mb-4">
-							<div class="flex h-16 w-16 items-center justify-center rounded-xl bg-orange-500/10">
-								<Zap class="h-8 w-8 text-orange-600" />
-							</div>
-						</div>
-
+			<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+				<!-- Image -->
+				<div class="order-1">
+					<div class="overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
+						<img
+							src="/prompts.svg"
+							alt="Keyword intelligence dashboard showing high-impact keywords and search analytics"
+							class="h-auto w-full object-cover"
+						/>
+					</div>
+				</div>
+				<div class="order-2">
+					<div class="p-4">
 						<!-- Content -->
-						<h3 class="text-foreground mb-2 text-lg font-semibold">Source Mapping</h3>
-						<p class="text-muted-foreground text-sm leading-relaxed">
-							Discover where LLMs source your brand data. Identify content gaps and boost your
-							visibility
+						<h3 class="mb-6 text-4xl font-semibold leading-tight text-gray-900">
+							Discover High-Impact Prompts AI Models Prioritize
+						</h3>
+						<p class="text-lg leading-relaxed text-gray-600">
+							Track high-conversion prompts to understand exactly what triggers AI to mention your
+							brand.
 						</p>
 					</div>
-				</Card>
+				</div>
 			</div>
 		</div>
 	</div>

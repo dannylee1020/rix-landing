@@ -10,13 +10,10 @@
 				<!-- Company Info -->
 				<div>
 					<div class="mb-4 flex items-center space-x-2">
-						<div class="bg-primary flex h-8 w-8 items-center justify-center rounded-lg">
-							<span class="text-primary-foreground text-lg font-bold">R</span>
-						</div>
 						<span class="text-foreground text-xl font-bold">Rix</span>
 					</div>
 					<p class="text-muted-foreground mb-6 max-w-sm leading-relaxed">
-						AI search intelligence built for e-commerce brands.
+						AI search analytics built for e-commerce brands.
 					</p>
 					<div class="flex space-x-4">
 						<a

@@ -8,9 +8,6 @@
 	<div class="container mx-auto flex h-16 max-w-screen-xl items-center justify-between px-4">
 		<!-- Logo -->
 		<a href="/" class="flex items-center space-x-2">
-			<div class="bg-primary flex h-8 w-8 items-center justify-center rounded-lg">
-				<span class="text-primary-foreground text-lg font-bold">R</span>
-			</div>
 			<span class="text-foreground text-xl font-bold">Rix</span>
 		</a>
 
