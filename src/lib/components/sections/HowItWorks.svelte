@@ -11,11 +11,11 @@
 					<div class="p-4">
 						<!-- Content -->
 						<h3 class="mb-6 text-4xl font-semibold leading-tight text-gray-900">
-							Track Your Brand's Visibility in Real-Time
+							Track Your Brand's Visibility Across AI Platforms in Real-Time
 						</h3>
 						<p class="text-lg leading-relaxed text-gray-600">
-							Monitor AI recommendation shifts and spot emerging trends before your competition
-							does.
+							Monitor how AI search platforms mention your brand. Track which prompts trigger
+							recommendations, sentiment shifts, and emerging trends in real-time.
 						</p>
 					</div>
 				</div>
@@ -36,7 +36,7 @@
 				<div class="order-1">
 					<div class="overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
 						<img
-							src="/source.svg"
+							src="/crawler.svg"
 							alt="Source mapping dashboard showing where AI models source brand information and data gaps"
 							class="h-auto w-full object-cover"
 						/>
@@ -46,11 +46,11 @@
 					<div class="p-4">
 						<!-- Content -->
 						<h3 class="mb-6 text-4xl font-semibold leading-tight text-gray-900">
-							Understand Where AI Gets Your Brand Information
+							Control Your Brand's AI Knowledge Base
 						</h3>
 						<p class="text-lg leading-relaxed text-gray-600">
-							Discover where LLMs source your brand data and identify content gaps to boost
-							visibility.
+							See what and how AI crawlers crawl your website, identify content gaps, and optimize
+							your site to become the source AI models trust.
 						</p>
 					</div>
 				</div>
@@ -61,10 +61,11 @@
 					<div class="p-4">
 						<!-- Content -->
 						<h3 class="mb-6 text-4xl font-semibold leading-tight text-gray-900">
-							Benchmark Your AI Visibility Against Competitors
+							Discover Which Sources AI Models Trust Most
 						</h3>
 						<p class="text-lg leading-relaxed text-gray-600">
-							Compare visibility against competitors and find opportunities to outrank them.
+							Identify which websites, forums, and sources AI platforms cite for your category. Find
+							off-page gaps and prioritize where to build authority.
 						</p>
 					</div>
 				</div>
@@ -72,7 +73,7 @@
 				<div class="order-1 lg:order-2">
 					<div class="overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
 						<img
-							src="/competitor.svg"
+							src="/source.svg"
 							alt="Competitive analysis dashboard showing AI visibility benchmarks and competitor rankings"
 							class="h-auto w-full object-cover"
 						/>
@@ -95,11 +96,11 @@
 					<div class="p-4">
 						<!-- Content -->
 						<h3 class="mb-6 text-4xl font-semibold leading-tight text-gray-900">
-							Discover High-Impact Prompts AI Models Prioritize
+							Decode What Triggers AI to Recommend Your Brand
 						</h3>
 						<p class="text-lg leading-relaxed text-gray-600">
-							Track high-conversion prompts to understand exactly what triggers AI to mention your
-							brand.
+							Analyze prompt patterns that trigger brand mentions. Understand which content elements
+							and contexts drive recommendations.
 						</p>
 					</div>
 				</div>

@@ -3,12 +3,13 @@
 </script>
 
 <nav
-	class="bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur"
+	class="sticky top-0 z-50 w-full border-b border-transparent backdrop-blur-md"
+	style="background: transparent;"
 >
 	<div class="container mx-auto flex h-16 max-w-screen-xl items-center justify-between px-4">
 		<!-- Logo -->
 		<a href="/" class="flex items-center space-x-2">
-			<span class="text-foreground text-xl font-bold">Rix</span>
+			<span class="text-foreground text-2xl font-bold">Rix</span>
 		</a>
 
 		<!-- Spacer for right alignment -->
@@ -17,9 +18,7 @@
 		<!-- Talk to Us CTA -->
 		<div class="flex items-center">
 			<a href="mailto:founders@tryrix.com">
-				<Button variant="default" size="sm" class="bg-black text-white hover:bg-gray-800"
-					>Talk to Us</Button
-				>
+				<Button variant="default" size="lg">Talk to Us</Button>
 			</a>
 		</div>
 	</div>

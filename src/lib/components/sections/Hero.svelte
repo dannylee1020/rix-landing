@@ -54,19 +54,21 @@
 	}
 </script>
 
-<section class="from-background to-muted/20 relative bg-gradient-to-b py-20 md:py-32">
+<section
+	class="relative flex items-center pt-16"
+	style="background: linear-gradient(90deg, #ffffff 0%, #dbeafe 100%); min-height: 80vh; margin-top: -64px;"
+>
 	<div class="container mx-auto max-w-screen-xl px-4">
 		<div class="mx-auto max-w-3xl text-center">
 			<!-- Main Headline -->
 			<h1 class="text-foreground mb-6 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
-				AI Search Analytics
-				<br />
-				<span class="text-primary">for E-commerce</span>
+				Own Your Brand's <br />
+				<span class="text-primary">AI Journey</span>
 			</h1>
 
 			<!-- Subheadline -->
 			<p class="text-muted-foreground mx-auto mb-8 max-w-2xl text-lg md:text-lg">
-				Monitor, analyze, and optimize your product's visibility on AI search platforms.
+				From tracking how AI sees you to optimizing how customers find you.
 			</p>
 
 			<!-- Beta CTA -->

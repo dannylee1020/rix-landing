@@ -2,10 +2,10 @@
 	import { Twitter, Linkedin, Github, Mail } from '@lucide/svelte';
 </script>
 
-<footer class="bg-background border-t">
+<footer class="border-t bg-white">
 	<div class="container mx-auto max-w-screen-xl px-4">
 		<!-- Main Footer Content -->
-		<div class="py-12">
+		<div class="py-20">
 			<div class="grid gap-8 md:grid-cols-2">
 				<!-- Company Info -->
 				<div>
@@ -34,7 +34,7 @@
 		</div>
 
 		<!-- Bottom Footer -->
-		<div class="border-border border-t py-6">
+		<div class="border-border border-t py-8">
 			<div class="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
 				<div class="text-muted-foreground text-sm">© 2025 Rix. All rights reserved.</div>
 				<div class="text-muted-foreground flex items-center space-x-6 text-sm">
