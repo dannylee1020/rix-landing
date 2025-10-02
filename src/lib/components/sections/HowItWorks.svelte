@@ -14,8 +14,8 @@
 							Track Your Brand's Visibility Across AI Platforms in Real-Time
 						</h3>
 						<p class="text-lg leading-relaxed text-gray-600">
-							Monitor how AI search platforms mention your brand. Track which prompts trigger
-							recommendations, sentiment shifts, and emerging trends in real-time.
+							Monitor how AI search platforms mention your brand. Track sentiment shifts, and
+							emerging trends in real-time.
 						</p>
 					</div>
 				</div>
