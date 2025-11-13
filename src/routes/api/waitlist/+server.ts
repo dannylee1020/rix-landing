@@ -9,7 +9,12 @@ const pool = new Pool({
 
 export const POST: RequestHandler = async ({ request }) => {
 	try {
-		const { email } = await request.json();
+		const { name, email } = await request.json();
+
+		// Validate name
+		if (!name || typeof name !== 'string' || name.trim().length === 0) {
+			return json({ error: 'Name is required' }, { status: 400 });
+		}
 
 		// Validate email
 		if (!email || typeof email !== 'string') {
@@ -25,7 +30,10 @@ export const POST: RequestHandler = async ({ request }) => {
 		// Insert into database
 		const client = await pool.connect();
 		try {
-			await client.query('INSERT INTO waitlist (email) VALUES ($1)', [email]);
+			await client.query(
+				'INSERT INTO waitlist (name, email) VALUES ($1, $2)',
+				[name.trim(), email]
+			);
 			return json({ success: true, message: 'Successfully joined waitlist!' });
 		} catch (dbError: any) {
 			// Handle duplicate email error
