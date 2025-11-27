@@ -64,7 +64,7 @@
 				AI search to discover brands and products
 			</p>
 			<a href="/join">
-				<Button size="lg" class="px-10 py-6 text-lg">Join Beta</Button>
+				<Button size="lg" class="px-10 py-6 text-lg">Request Access</Button>
 			</a>
 		</div>
 	</div>

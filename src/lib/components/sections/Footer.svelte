@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Twitter, Linkedin, Github, Mail } from '@lucide/svelte';
+	import { Mail } from '@lucide/svelte';
 </script>
 
 <footer class="border-t bg-white">
@@ -17,14 +17,9 @@
 					</p>
 					<div class="flex space-x-4">
 						<a
-							href="https://linkedin.com"
-							class="text-muted-foreground hover:text-foreground transition-colors"
-						>
-							<Linkedin class="h-5 w-5" />
-						</a>
-						<a
 							href="mailto:founders@tryrix.com"
 							class="text-muted-foreground hover:text-foreground transition-colors"
+							aria-label="Email us"
 						>
 							<Mail class="h-5 w-5" />
 						</a>

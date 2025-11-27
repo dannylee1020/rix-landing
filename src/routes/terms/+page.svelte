@@ -3,6 +3,15 @@
 	import Footer from '$lib/components/sections/Footer.svelte';
 </script>
 
+<svelte:head>
+	<title>Terms of Service - Rix</title>
+	<meta
+		name="description"
+		content="Rix terms of service. Read our usage terms and agreements for the AI search analytics platform for e-commerce brands."
+	/>
+	<link rel="canonical" href="https://tryrix.com/terms" />
+</svelte:head>
+
 <Navigation />
 
 <div class="bg-background min-h-screen">

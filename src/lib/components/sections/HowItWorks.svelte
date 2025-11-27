@@ -36,7 +36,14 @@
 
 			<!-- Dashboard Image -->
 			<div class="mb-12 overflow-hidden rounded-xl border-2 border-gray-200">
-				<img src="/brand_intel.png" alt="Brand Intelligence Dashboard" class="h-auto w-full" />
+				<img
+					src="/brand_intel.png"
+					alt="Brand Intelligence Dashboard showing AI search visibility metrics across ChatGPT, Gemini, and Claude"
+					class="h-auto w-full"
+					width="1816"
+					height="1246"
+					loading="lazy"
+				/>
 			</div>
 
 			<!-- Feature Cards -->
@@ -100,7 +107,14 @@
 
 			<!-- Dashboard Image -->
 			<div class="mb-12 overflow-hidden rounded-xl border-2 border-gray-200">
-				<img src="/traffic.png" alt="AI Traffic Analysis Dashboard" class="h-auto w-full" />
+				<img
+					src="/traffic.png"
+					alt="AI Traffic Analysis Dashboard tracking customer journeys from AI search to conversions"
+					class="h-auto w-full"
+					width="1819"
+					height="1226"
+					loading="lazy"
+				/>
 			</div>
 
 			<!-- Feature Cards -->
@@ -165,7 +179,14 @@
 
 			<!-- Dashboard Image -->
 			<div class="mb-12 overflow-hidden rounded-xl border-2 border-gray-200">
-				<img src="/market_intel.png" alt="Market & Competition Dashboard" class="h-auto w-full" />
+				<img
+					src="/market_intel.png"
+					alt="Market and Competition Dashboard showing competitor analysis in AI search results"
+					class="h-auto w-full"
+					width="1820"
+					height="1213"
+					loading="lazy"
+				/>
 			</div>
 
 			<!-- Feature Cards -->

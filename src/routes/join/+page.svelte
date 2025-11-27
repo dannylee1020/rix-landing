@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Rix - Track How Your Products Appear in AI Search</title>
+	<meta name="robots" content="noindex, follow" />
+</svelte:head>
+
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';

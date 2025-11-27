@@ -3,6 +3,15 @@
 	import Footer from '$lib/components/sections/Footer.svelte';
 </script>
 
+<svelte:head>
+	<title>Privacy Policy - Rix</title>
+	<meta
+		name="description"
+		content="Rix privacy policy. Learn how we collect, use, and protect your data when using our AI search analytics platform for e-commerce."
+	/>
+	<link rel="canonical" href="https://tryrix.com/privacy" />
+</svelte:head>
+
 <Navigation />
 
 <div class="bg-background min-h-screen">

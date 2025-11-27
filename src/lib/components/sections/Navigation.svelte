@@ -12,6 +12,7 @@
 <nav
 	class="sticky top-0 z-50 w-full border-b border-transparent backdrop-blur-md"
 	style="background: transparent;"
+	aria-label="Main navigation"
 >
 	<div class="container mx-auto flex h-16 max-w-screen-xl items-center justify-between px-4">
 		<!-- Logo -->

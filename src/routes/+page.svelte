@@ -16,14 +16,17 @@
 		name="keywords"
 		content="AI search analytics, e-commerce products, shopping optimization, ChatGPT shopping, Gemini shopping, Claude, product visibility, AI Commerce"
 	/>
-	<meta property="og:title" content="Rix - AI Search analytics for E-Commerce Brands" />
+	<link rel="canonical" href="https://tryrix.com/" />
+	<meta property="og:title" content="Rix - AI Search Analytics for E-Commerce Brands" />
 	<meta
 		property="og:description"
 		content="AI search analytics specialized for e-commerce brands. Optimize how your products appear in AI-powered shopping."
 	/>
 	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://tryrix.com/" />
+	<meta property="og:site_name" content="Rix" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Rix - AI Search analytics for E-Commerce Brands" />
+	<meta name="twitter:title" content="Rix - AI Search Analytics for E-Commerce Brands" />
 	<meta
 		name="twitter:description"
 		content="AI search analytics specialized for e-commerce brands. Optimize how your products appear in AI-powered shopping."

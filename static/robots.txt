@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /join
+
+Sitemap: https://tryrix.com/sitemap.xml

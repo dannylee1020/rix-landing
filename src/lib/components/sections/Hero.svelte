@@ -21,11 +21,10 @@
 				Track, analyze, and optimize the complete journey from AI search to sales.
 			</p>
 
-			<!-- Beta CTA -->
 			<div class="mx-auto mb-16">
 				<a href="/join">
 					<Button size="lg" class="px-10 py-6 text-lg">
-						Join Beta
+						Request Access
 						<ArrowRight class="ml-2 h-5 w-5" />
 					</Button>
 				</a>
