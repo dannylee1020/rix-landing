@@ -16,7 +16,7 @@
 >
 	<div class="container mx-auto flex h-16 max-w-screen-xl items-center justify-between px-4">
 		<!-- Logo -->
-		<a href="/" class="flex items-center space-x-2">
+		<a href="/" class="flex items-center">
 			<span class="text-foreground text-2xl font-bold">Rix</span>
 		</a>
 
