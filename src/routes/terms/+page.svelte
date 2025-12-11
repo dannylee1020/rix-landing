@@ -15,7 +15,8 @@
 <Navigation />
 
 <div class="bg-background min-h-screen">
-	<div class="container mx-auto max-w-4xl px-6 py-16">
+	<div class="container mx-auto max-w-screen-xl px-6 py-16">
+		<div class="mx-auto max-w-4xl">
 		<div class="mb-12">
 			<h1 class="text-foreground mb-4 text-4xl font-bold">Terms of Service</h1>
 			<p class="text-muted-foreground text-lg">Last Updated: August 21, 2025</p>
@@ -189,6 +190,7 @@
 					will remain in full force and effect.
 				</p>
 			</section>
+		</div>
 		</div>
 	</div>
 </div>

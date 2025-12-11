@@ -14,7 +14,7 @@
 	style="background: transparent;"
 	aria-label="Main navigation"
 >
-	<div class="container mx-auto flex h-16 max-w-screen-xl items-center justify-between px-4">
+	<div class="container mx-auto flex h-16 max-w-screen-xl items-center justify-between px-6">
 		<!-- Logo -->
 		<a href="/" class="flex items-center">
 			<span class="text-foreground text-2xl font-bold">Rix</span>
@@ -27,17 +27,18 @@
 			>
 				<a
 					href="/"
-					class="rounded-full px-5 py-2 text-sm font-medium transition-all {isActive('/')
-						? 'bg-gray-100 text-gray-900'
-						: 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'}"
+					class="relative rounded-full px-5 py-2 text-sm font-medium transition-all {isActive('/')
+						? 'bg-gray-100 text-indigo-600'
+						: 'text-gray-700 hover:bg-gray-100 hover:text-indigo-600'}"
 				>
+					{#if isActive('/')}<span class="absolute left-1/2 top-0 h-0.5 w-6 -translate-x-1/2 rounded-full bg-indigo-500"></span>{/if}
 					Home
 				</a>
 				<a
 					href="https://docs.tryrix.com"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="rounded-full px-5 py-2 text-sm font-medium text-gray-700 transition-all hover:bg-gray-100 hover:text-gray-900"
+					class="rounded-full px-5 py-2 text-sm font-medium text-gray-700 transition-all hover:bg-gray-100 hover:text-indigo-600"
 				>
 					Changelog
 				</a>
