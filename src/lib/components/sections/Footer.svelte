@@ -31,7 +31,13 @@
 		<!-- Bottom Footer -->
 		<div class="border-border border-t py-8">
 			<div class="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
-				<div class="text-muted-foreground text-sm">© 2025 Rix. All rights reserved.</div>
+				<div class="text-muted-foreground text-sm">
+					© 2025 Rix. All rights reserved.
+					<span class="mx-2">·</span>
+					<a href="https://logo.dev" class="hover:text-foreground transition-colors"
+						>Logos provided by Logo.dev</a
+					>
+				</div>
 				<div class="text-muted-foreground flex items-center space-x-6 text-sm">
 					<a href="/privacy" class="hover:text-foreground transition-colors"> Privacy Policy </a>
 					<a href="/terms" class="hover:text-foreground transition-colors"> Terms of Service </a>
