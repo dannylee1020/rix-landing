@@ -28,17 +28,19 @@
 				<a
 					href="/"
 					class="relative rounded-full px-5 py-2 text-sm font-medium transition-all {isActive('/')
-						? 'bg-gray-100 text-indigo-600'
-						: 'text-gray-700 hover:bg-gray-100 hover:text-indigo-600'}"
+						? 'bg-gray-100 text-[#054af7]'
+						: 'text-gray-700 hover:bg-gray-100 hover:text-[#054af7]'}"
 				>
-					{#if isActive('/')}<span class="absolute left-1/2 top-0 h-0.5 w-6 -translate-x-1/2 rounded-full bg-indigo-500"></span>{/if}
+					{#if isActive('/')}<span
+							class="absolute left-1/2 top-0 h-0.5 w-6 -translate-x-1/2 rounded-full bg-[#054af7]"
+						></span>{/if}
 					Home
 				</a>
 				<a
 					href="https://docs.tryrix.com"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="rounded-full px-5 py-2 text-sm font-medium text-gray-700 transition-all hover:bg-gray-100 hover:text-indigo-600"
+					class="rounded-full px-5 py-2 text-sm font-medium text-gray-700 transition-all hover:bg-gray-100 hover:text-[#054af7]"
 				>
 					Changelog
 				</a>

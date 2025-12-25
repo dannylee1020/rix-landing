@@ -3,7 +3,7 @@
 </script>
 
 <footer class="border-t bg-white">
-	<div class="container mx-auto max-w-screen-xl px-4">
+	<div class="container mx-auto max-w-screen-xl px-6">
 		<!-- Main Footer Content -->
 		<div class="py-20">
 			<div class="grid gap-8 md:grid-cols-2">

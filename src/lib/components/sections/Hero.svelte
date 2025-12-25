@@ -6,7 +6,7 @@
 <section class="relative overflow-hidden bg-white pb-12 pt-32" style="margin-top: -32px;">
 	<!-- Radial glow behind heading -->
 	<div
-		class="pointer-events-none absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 h-[500px] w-[800px] bg-[radial-gradient(ellipse_at_center,_rgba(99,102,241,0.15)_0%,_rgba(59,130,246,0.08)_40%,_transparent_70%)]"
+		class="pointer-events-none absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 h-[500px] w-[800px] bg-[radial-gradient(ellipse_at_center,_rgba(5,74,247,0.12)_0%,_rgba(5,74,247,0.06)_40%,_transparent_70%)]"
 	></div>
 
 	<div class="relative z-10 container mx-auto max-w-screen-xl px-6">
@@ -15,12 +15,9 @@
 				class="text-foreground mb-5 text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl"
 			>
 				AI search analytics <br />
-				<span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent"
-					>for e-commerce brands</span
-				>
+				<span class="text-[#054af7]">for e-commerce brands</span>
 			</h1>
 
-			<!-- Subheadline -->
 			<p class="text-muted-foreground text-md mx-auto mb-8 max-w-2xl leading-relaxed md:text-xl">
 				Billions of people are using AI search on a daily basis. <br />
 				Track, analyze, and optimize the complete journey from AI search to sales.
