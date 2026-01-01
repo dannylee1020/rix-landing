@@ -41,14 +41,14 @@
 </script>
 
 <section class="bg-white pb-24 pt-10">
-	<div class="container mx-auto max-w-6xl space-y-24 px-6">
+	<div class="container mx-auto max-w-5xl space-y-24 px-6">
 		<!-- SECTION 1: AI INSIGHTS -->
-		<div class="space-y-12">
-			<div class="mb-10 text-center">
-				<span class="mb-4 inline-block text-xs font-semibold tracking-widest text-[#054af7]">
-					AI INSIGHTS
+		<div class="space-y-10">
+			<div class="mb-8 text-center">
+				<span class="mb-3 inline-block text-xs font-semibold uppercase tracking-widest text-[var(--brand)]">
+					AI Insights
 				</span>
-				<h3 class="text-3xl font-semibold tracking-tight text-gray-900">
+				<h3 class="text-2xl font-bold tracking-tight text-foreground md:text-3xl">
 					Understand and improve your AI presence
 				</h3>
 			</div>
@@ -80,9 +80,9 @@
 							<line x1="10" y1="140" x2="190" y2="140" class="dim-stroke" />
 						</svg>
 					</div>
-					<div class="p-8">
-						<h3 class="mb-2 text-lg font-medium text-gray-900">{brandFeatures[0].title}</h3>
-						<p class="text-sm leading-relaxed text-gray-500">{brandFeatures[0].description}</p>
+					<div class="p-6">
+						<h3 class="mb-2 text-base font-medium text-foreground">{brandFeatures[0].title}</h3>
+						<p class="text-sm leading-relaxed text-muted-foreground">{brandFeatures[0].description}</p>
 					</div>
 				</div>
 
@@ -111,9 +111,9 @@
 							<circle cx="45" cy="75" r="2" class="fill-brand-solid" stroke="none" />
 						</svg>
 					</div>
-					<div class="p-8">
-						<h3 class="mb-2 text-lg font-medium text-gray-900">{brandFeatures[1].title}</h3>
-						<p class="text-sm leading-relaxed text-gray-500">{brandFeatures[1].description}</p>
+					<div class="p-6">
+						<h3 class="mb-2 text-base font-medium text-foreground">{brandFeatures[1].title}</h3>
+						<p class="text-sm leading-relaxed text-muted-foreground">{brandFeatures[1].description}</p>
 					</div>
 				</div>
 
@@ -156,9 +156,9 @@
 							/>
 						</svg>
 					</div>
-					<div class="p-8">
-						<h3 class="mb-2 text-lg font-medium text-gray-900">{brandFeatures[2].title}</h3>
-						<p class="text-sm leading-relaxed text-gray-500">{brandFeatures[2].description}</p>
+					<div class="p-6">
+						<h3 class="mb-2 text-base font-medium text-foreground">{brandFeatures[2].title}</h3>
+						<p class="text-sm leading-relaxed text-muted-foreground">{brandFeatures[2].description}</p>
 					</div>
 				</div>
 
@@ -293,21 +293,21 @@
 							</g>
 						</svg>
 					</div>
-					<div class="p-8">
-						<h3 class="mb-2 text-lg font-medium text-gray-900">{brandFeatures[3].title}</h3>
-						<p class="text-sm leading-relaxed text-gray-500">{brandFeatures[3].description}</p>
+					<div class="p-6">
+						<h3 class="mb-2 text-base font-medium text-foreground">{brandFeatures[3].title}</h3>
+						<p class="text-sm leading-relaxed text-muted-foreground">{brandFeatures[3].description}</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- SECTION 2: TRAFFIC ANALYSIS -->
-		<div class="space-y-12">
-			<div class="mt-30 mb-10 text-center">
-				<span class="mb-4 inline-block text-xs font-semibold tracking-widest text-[#7c5aed]">
-					TRAFFIC ANALYSIS
+		<div class="space-y-10">
+			<div class="mb-8 text-center">
+				<span class="mb-3 inline-block text-xs font-semibold uppercase tracking-widest text-[#8b5cf6]">
+					Traffic Analysis
 				</span>
-				<h3 class="text-3xl font-semibold tracking-tight text-gray-900">
+				<h3 class="text-2xl font-bold tracking-tight text-foreground md:text-3xl">
 					See how AI search drives traffic and sales
 				</h3>
 			</div>
@@ -343,9 +343,9 @@
 							>
 						</svg>
 					</div>
-					<div class="p-8">
-						<h3 class="mb-2 text-lg font-medium text-gray-900">{perfFeatures[0].title}</h3>
-						<p class="text-sm leading-relaxed text-gray-500">{perfFeatures[0].description}</p>
+					<div class="p-6">
+						<h3 class="mb-2 text-base font-medium text-foreground">{perfFeatures[0].title}</h3>
+						<p class="text-sm leading-relaxed text-muted-foreground">{perfFeatures[0].description}</p>
 					</div>
 				</div>
 
@@ -363,9 +363,9 @@
 							<path d="M10 30 L10 130" class="dim-stroke" stroke-dasharray="2 2" />
 						</svg>
 					</div>
-					<div class="p-8">
-						<h3 class="mb-2 text-lg font-medium text-gray-900">{perfFeatures[1].title}</h3>
-						<p class="text-sm leading-relaxed text-gray-500">{perfFeatures[1].description}</p>
+					<div class="p-6">
+						<h3 class="mb-2 text-base font-medium text-foreground">{perfFeatures[1].title}</h3>
+						<p class="text-sm leading-relaxed text-muted-foreground">{perfFeatures[1].description}</p>
 					</div>
 				</div>
 
@@ -380,9 +380,9 @@
 							<path d="M97 142 L100 145 L103 142" class="stroke-perf" fill="none" />
 						</svg>
 					</div>
-					<div class="p-8">
-						<h3 class="mb-2 text-lg font-medium text-gray-900">{perfFeatures[2].title}</h3>
-						<p class="text-sm leading-relaxed text-gray-500">{perfFeatures[2].description}</p>
+					<div class="p-6">
+						<h3 class="mb-2 text-base font-medium text-foreground">{perfFeatures[2].title}</h3>
+						<p class="text-sm leading-relaxed text-muted-foreground">{perfFeatures[2].description}</p>
 					</div>
 				</div>
 
@@ -406,9 +406,9 @@
 							>
 						</svg>
 					</div>
-					<div class="p-8">
-						<h3 class="mb-2 text-lg font-medium text-gray-900">{perfFeatures[3].title}</h3>
-						<p class="text-sm leading-relaxed text-gray-500">{perfFeatures[3].description}</p>
+					<div class="p-6">
+						<h3 class="mb-2 text-base font-medium text-foreground">{perfFeatures[3].title}</h3>
+						<p class="text-sm leading-relaxed text-muted-foreground">{perfFeatures[3].description}</p>
 					</div>
 				</div>
 			</div>
@@ -419,29 +419,22 @@
 <style>
 	.feature-card {
 		background-color: #ffffff;
-		border: 1px solid #e5e7eb;
-		transition: all 0.4s ease;
+		border: 1px solid var(--border, #e5e5e5);
+		transition: border-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
 		display: flex;
 		flex-direction: column;
 		overflow: hidden;
 		border-radius: 12px;
-		box-shadow:
-			0 1px 3px 0 rgba(0, 0, 0, 0.1),
-			0 1px 2px 0 rgba(0, 0, 0, 0.06);
 	}
 	.feature-card:hover {
 		border-color: #d1d5db;
-		transform: translateY(-2px);
-		box-shadow:
-			0 10px 15px -3px rgba(0, 0, 0, 0.1),
-			0 4px 6px -2px rgba(0, 0, 0, 0.05);
 	}
 
 	.visual-area {
 		width: 100%;
-		height: 240px;
-		background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
-		border-bottom: 1px solid #e5e7eb;
+		height: 220px;
+		background: #fafafa;
+		border-bottom: 1px solid var(--border, #e5e5e5);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -459,52 +452,43 @@
 	}
 
 	.dim-stroke {
-		stroke: #e5e7eb;
+		stroke: #e5e5e5;
 	}
 	.fill-light {
 		fill: #ffffff;
 	}
-	.fill-dark {
-		fill: #171717;
-	}
 
 	/* Brand Intelligence Colors (Vibrant Blue) */
 	.stroke-brand {
-		stroke: #054af7;
+		stroke: var(--brand, #054af7);
 	}
 	.fill-brand-dim {
 		fill: rgba(5, 74, 247, 0.04);
 	}
 	.fill-brand-solid {
-		fill: #054af7;
+		fill: var(--brand, #054af7);
 	}
 	.text-brand {
-		fill: #054af7;
+		fill: var(--brand, #054af7);
 	}
 
 	/* Traffic Analysis Colors (Violet) */
 	.stroke-perf {
-		stroke: #7c5aed;
-	}
-	.fill-perf-dim {
-		fill: rgba(124, 90, 237, 0.04);
-	}
-	.fill-perf-solid {
-		fill: #7c5aed;
+		stroke: #8b5cf6;
 	}
 	.text-perf {
-		fill: #7c5aed;
+		fill: #8b5cf6;
 	}
 
 	/* SVG Text Styles */
 	.svg-text {
-		font-family: 'Inter', sans-serif;
+		font-family: var(--font-sans, 'Geist', sans-serif);
 		font-size: 10px;
 		font-weight: 500;
-		fill: #111827;
+		fill: #0a0a0a;
 		stroke: none;
 	}
 	.svg-text-dim {
-		fill: #9ca3af;
+		fill: #737373;
 	}
 </style>

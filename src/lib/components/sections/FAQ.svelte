@@ -42,35 +42,34 @@
 	}
 </script>
 
-<section id="faq" class="pb-25 bg-white pt-10">
-	<div class="container mx-auto max-w-6xl px-6">
-		<div class="rounded-xl border border-gray-200 bg-white p-12 shadow-sm">
-			<h2 class="mb-8 text-3xl font-bold text-gray-900">FAQs</h2>
+<section id="faq" class="bg-white py-24">
+	<div class="container mx-auto max-w-5xl px-6">
+		<h2 class="mb-10 text-center text-2xl font-bold tracking-tight text-foreground md:text-3xl">
+			Frequently Asked Questions
+		</h2>
 
-			<div class="divide-y divide-gray-200">
-				{#each faqs as faq, index}
-					<div>
-						<button
-							class="flex w-full items-center justify-between py-5 text-left"
-							onclick={() => toggle(index)}
-							aria-expanded={openIndex === index}
-						>
-							<span class="text-sm font-semibold text-gray-900">{faq.question}</span>
-							<ChevronDown
-								class="ml-4 h-4 w-4 flex-shrink-0 text-gray-400 transition-transform duration-200 {openIndex ===
-								index
-									? 'rotate-180'
-									: ''}"
-							/>
-						</button>
-						{#if openIndex === index}
-							<div transition:slide={{ duration: 150 }} class="pb-5">
-								<p class="text-sm leading-relaxed text-gray-600">{faq.answer}</p>
-							</div>
-						{/if}
-					</div>
-				{/each}
-			</div>
+		<div class="divide-y divide-border">
+			{#each faqs as faq, index}
+				<div>
+					<button
+						class="flex w-full items-center justify-between py-5 text-left transition-colors duration-150"
+						onclick={() => toggle(index)}
+						aria-expanded={openIndex === index}
+					>
+						<span class="text-sm font-medium text-foreground">{faq.question}</span>
+						<ChevronDown
+							class="ml-4 h-4 w-4 flex-shrink-0 text-muted-foreground transition-transform duration-150 {openIndex === index
+								? 'rotate-180'
+								: ''}"
+						/>
+					</button>
+					{#if openIndex === index}
+						<div transition:slide={{ duration: 150 }} class="pb-5">
+							<p class="text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>
+						</div>
+					{/if}
+				</div>
+			{/each}
 		</div>
 	</div>
 </section>

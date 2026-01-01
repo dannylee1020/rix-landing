@@ -10,37 +10,31 @@
 </script>
 
 <nav
-	class="sticky top-0 z-50 w-full border-b border-transparent backdrop-blur-md"
-	style="background: transparent;"
+	class="sticky top-0 z-50 w-full border-b border-border/50 bg-white/80 backdrop-blur-md"
 	aria-label="Main navigation"
 >
-	<div class="container mx-auto flex h-16 max-w-screen-xl items-center justify-between px-6">
+	<div class="container mx-auto flex h-14 max-w-screen-xl items-center justify-between px-6">
 		<!-- Logo -->
 		<a href="/" class="flex items-center">
-			<span class="text-foreground text-2xl font-bold">Rix</span>
+			<span class="text-foreground text-xl font-bold tracking-tight">Rix</span>
 		</a>
 
-		<!-- Rounded Navigation Menu -->
+		<!-- Navigation Menu -->
 		<div class="hidden flex-1 items-center justify-center md:flex">
-			<div
-				class="flex items-center space-x-1 rounded-full border border-gray-200 bg-white/80 px-1.5 py-1.5 shadow-sm backdrop-blur-sm"
-			>
+			<div class="flex items-center gap-1">
 				<a
 					href="/"
-					class="relative rounded-full px-5 py-2 text-sm font-medium transition-all {isActive('/')
-						? 'bg-gray-100 text-[#054af7]'
-						: 'text-gray-700 hover:bg-gray-100 hover:text-[#054af7]'}"
+					class="relative rounded-md px-4 py-2 text-sm font-medium transition-colors duration-150 {isActive('/')
+						? 'text-[var(--brand)]'
+						: 'text-muted-foreground hover:text-foreground'}"
 				>
-					{#if isActive('/')}<span
-							class="absolute left-1/2 top-0 h-0.5 w-6 -translate-x-1/2 rounded-full bg-[#054af7]"
-						></span>{/if}
 					Home
 				</a>
 				<a
 					href="https://docs.tryrix.com"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="rounded-full px-5 py-2 text-sm font-medium text-gray-700 transition-all hover:bg-gray-100 hover:text-[#054af7]"
+					class="rounded-md px-4 py-2 text-sm font-medium text-muted-foreground transition-colors duration-150 hover:text-foreground"
 				>
 					Changelog
 				</a>
@@ -50,7 +44,7 @@
 		<!-- Talk to Us CTA -->
 		<div class="flex items-center">
 			<a href="mailto:founders@tryrix.com">
-				<Button variant="default" size="lg">Talk to Us</Button>
+				<Button variant="default" size="sm" class="h-9 px-4 text-sm font-medium">Talk to Us</Button>
 			</a>
 		</div>
 	</div>

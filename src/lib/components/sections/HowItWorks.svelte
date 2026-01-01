@@ -23,55 +23,66 @@
 </script>
 
 <section class="bg-white py-24">
-	<div class="container mx-auto max-w-6xl px-6">
+	<div class="container mx-auto max-w-5xl px-6">
 		<!-- Header -->
-		<div class="mb-12 text-center">
-			<span class="mb-4 inline-block text-xs font-semibold tracking-widest text-[#054af7]">
-				SEARCH ANALYTICS
+		<div class="mb-16 text-center">
+			<span class="mb-3 inline-block text-xs font-semibold uppercase tracking-widest text-[var(--brand)]">
+				Search Analytics
 			</span>
-			<h2 class="text-4xl font-semibold tracking-tight text-gray-900">
+			<h2 class="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
 				Turn AI search into a
-				<br /> measurable sales channel
+				<br class="hidden md:block" /> measurable sales channel
 			</h2>
 		</div>
 
-		<!-- Two Column Selectors -->
-		<div class="mb-12 grid grid-cols-1 gap-12 md:grid-cols-2">
+		<!-- Tab Selectors -->
+		<div class="mb-10 grid grid-cols-1 gap-8 md:grid-cols-2">
 			{#each Object.entries(tabs) as [key, tab]}
 				{@const Icon = tab.icon}
-				<button onclick={() => (activeTab = key as Tab)} class="group relative text-center">
-					<Icon
-						class="mx-auto mb-4 h-6 w-6 transition-colors {activeTab === key
-							? 'text-[#054af7]'
-							: 'text-gray-400 group-hover:text-gray-500'}"
-					/>
+				<button
+					onclick={() => (activeTab = key as Tab)}
+					class="group relative cursor-pointer text-center transition-all duration-150"
+				>
+					<div class="mb-4 flex justify-center">
+						<div
+							class="flex h-10 w-10 items-center justify-center rounded-lg transition-colors duration-150 {activeTab === key
+								? 'bg-[var(--brand-light)]'
+								: 'bg-muted'}"
+						>
+							<Icon
+								class="h-5 w-5 transition-colors duration-150 {activeTab === key
+									? 'text-[var(--brand)]'
+									: 'text-muted-foreground group-hover:text-foreground'}"
+							/>
+						</div>
+					</div>
 					<h3
-						class="mb-2 text-xl font-semibold transition-colors {activeTab === key
-							? 'text-gray-900'
-							: 'text-gray-400 group-hover:text-gray-600'}"
+						class="mb-2 text-lg font-semibold transition-colors duration-150 {activeTab === key
+							? 'text-foreground'
+							: 'text-muted-foreground group-hover:text-foreground'}"
 					>
 						{tab.title}
 					</h3>
 					<p
-						class="mx-auto max-w-xs text-sm leading-relaxed transition-colors {activeTab === key
-							? 'text-gray-600'
-							: 'text-gray-400 group-hover:text-gray-500'}"
+						class="mx-auto max-w-xs text-sm leading-relaxed transition-colors duration-150 {activeTab === key
+							? 'text-muted-foreground'
+							: 'text-muted-foreground/60 group-hover:text-muted-foreground'}"
 					>
 						{tab.description}
 					</p>
 
 					<!-- Bottom indicator bar -->
 					<div
-						class="mt-6 h-0.5 w-full rounded-full transition-all {activeTab === key
-							? 'bg-[#054af7]'
-							: 'bg-gray-200 group-hover:bg-gray-300'}"
+						class="mx-auto mt-6 h-0.5 w-full max-w-[200px] rounded-full transition-all duration-150 {activeTab === key
+							? 'bg-[var(--brand)]'
+							: 'bg-border group-hover:bg-border'}"
 					></div>
 				</button>
 			{/each}
 		</div>
 
 		<!-- Dashboard Image -->
-		<div class="overflow-hidden rounded-xl border border-gray-200 shadow-sm">
+		<div class="overflow-hidden rounded-xl border border-border shadow-sm">
 			<img
 				src={tabs[activeTab].image}
 				alt={tabs[activeTab].imageAlt}
