@@ -2,7 +2,7 @@
 	import { Mail } from '@lucide/svelte';
 </script>
 
-<footer class="border-border border-t bg-white">
+<footer class="border-t border-border bg-white">
 	<div class="container mx-auto max-w-screen-xl px-6">
 		<!-- Main Footer Content -->
 		<div class="py-12">
@@ -10,15 +10,15 @@
 				<!-- Company Info -->
 				<div>
 					<div class="mb-2 flex items-center">
-						<span class="text-foreground text-lg font-bold tracking-tight">Rix</span>
+						<span class="text-lg font-bold tracking-tight text-foreground">Rix</span>
 					</div>
-					<p class="text-muted-foreground text-sm">AI search analytics for e-commerce brands.</p>
+					<p class="text-sm text-muted-foreground">AI search analytics for e-commerce brands.</p>
 				</div>
 
 				<!-- Contact -->
 				<a
 					href="mailto:founders@tryrix.com"
-					class="text-muted-foreground hover:text-foreground flex items-center gap-2 text-sm transition-colors duration-150"
+					class="flex items-center gap-2 text-sm text-muted-foreground transition-colors duration-150 hover:text-foreground"
 					aria-label="Email us"
 				>
 					<Mail class="h-4 w-4" />
@@ -28,19 +28,13 @@
 		</div>
 
 		<!-- Bottom Footer -->
-		<div class="border-border border-t py-6">
+		<div class="border-t border-border py-6">
 			<div class="flex flex-col items-center justify-between gap-4 md:flex-row">
-				<div class="text-muted-foreground text-xs">
-					© 2025 Rix. All rights reserved.
-					<span class="mx-1.5">·</span>
-					<a href="https://logo.dev" class="hover:text-foreground transition-colors duration-150"
-						>Logos by Logo.dev</a
+				<div class="text-xs text-muted-foreground">© 2025 Rix. All rights reserved.</div>
+				<div class="flex items-center gap-6 text-xs text-muted-foreground">
+					<a href="/privacy" class="transition-colors duration-150 hover:text-foreground">Privacy</a
 					>
-				</div>
-				<div class="text-muted-foreground flex items-center gap-6 text-xs">
-					<a href="/privacy" class="hover:text-foreground transition-colors duration-150">Privacy</a
-					>
-					<a href="/terms" class="hover:text-foreground transition-colors duration-150">Terms</a>
+					<a href="/terms" class="transition-colors duration-150 hover:text-foreground">Terms</a>
 				</div>
 			</div>
 		</div>
