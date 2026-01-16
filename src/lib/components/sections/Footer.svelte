@@ -12,7 +12,7 @@
 					<div class="mb-2 flex items-center">
 						<span class="text-lg font-bold tracking-tight text-foreground">Rix</span>
 					</div>
-					<p class="text-sm text-muted-foreground">AI search analytics for e-commerce brands.</p>
+					<p class="text-sm text-muted-foreground">AI search analytics for beauty brands.</p>
 				</div>
 
 				<!-- Contact -->

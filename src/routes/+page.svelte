@@ -9,29 +9,29 @@
 </script>
 
 <svelte:head>
-	<title>Rix - AI Search Analytics for E-commerce Brands</title>
+	<title>Rix - AI Search Analytics for Beauty Brands</title>
 	<meta
 		name="description"
-		content="AI search analytics for e-commerce brands. Track how ChatGPT and Google AI represent your products and drive traffic to your store."
+		content="AI search analytics for beauty brands. See how AI recommends products, which brands dominate your category, and why consumers find your competitors instead of you."
 	/>
 	<meta
 		name="keywords"
-		content="AI search analytics, e-commerce products, shopping optimization, ChatGPT shopping, Gemini shopping, Claude, product visibility, AI Commerce"
+		content="AI search analytics, beauty brands, skincare, makeup, haircare, ChatGPT shopping, AI product recommendations, beauty marketing"
 	/>
 	<link rel="canonical" href="https://tryrix.com/" />
-	<meta property="og:title" content="Rix - AI Search Analytics for E-Commerce Brands" />
+	<meta property="og:title" content="Rix - AI Search Analytics for Beauty Brands" />
 	<meta
 		property="og:description"
-		content="AI search analytics specialized for e-commerce brands. Optimize how your products appear in AI-powered shopping."
+		content="AI search analytics for beauty brands. See how AI recommends products, which brands dominate your category, and why consumers find your competitors instead of you."
 	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://tryrix.com/" />
 	<meta property="og:site_name" content="Rix" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Rix - AI Search Analytics for E-Commerce Brands" />
+	<meta name="twitter:title" content="Rix - AI Search Analytics for Beauty Brands" />
 	<meta
 		name="twitter:description"
-		content="AI search analytics specialized for e-commerce brands. Optimize how your products appear in AI-powered shopping."
+		content="AI search analytics for beauty brands. See how AI recommends products, which brands dominate your category, and why consumers find your competitors instead of you."
 	/>
 
 	<!-- FAQ Schema Markup -->
@@ -42,18 +42,26 @@
 		"mainEntity": [
 			{
 				"@type": "Question",
-				"name": "What is Rix?",
+				"name": "Why does AI search matter for beauty brands?",
 				"acceptedAnswer": {
 					"@type": "Answer",
-					"text": "Rix is an AI search analytics platform for e-commerce brands. We give you complete visibility into how AI platforms like ChatGPT and Google AI represent your brand, recommend your products, and drive traffic to your store."
+					"text": "Searches like 'best sunscreen for oily skin' or 'Vitamin C serum under $30' used to happen on Google. Now they happen in ChatGPT, Perplexity, and Google AI Overviews—and AI doesn't return ten blue links. It recommends specific products. If AI isn't recommending yours, you're invisible at the moment of decision."
 				}
 			},
 			{
 				"@type": "Question",
-				"name": "Who is Rix for?",
+				"name": "How is Rix different from Shopify's AI analytics?",
 				"acceptedAnswer": {
 					"@type": "Answer",
-					"text": "Marketing teams at e-commerce brands who want to understand and optimize their presence in AI search."
+					"text": "Shopify tells you orders and conversions from your store. Rix tells you what's happening before consumers even reach your site—how AI talks about your brand, who it recommends instead, and why."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "What competitive insights do I get?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Share of voice for beauty queries, gap analysis showing where competitors outrank you, and source intelligence showing which beauty publications AI relies on."
 				}
 			},
 			{
@@ -61,31 +69,15 @@
 				"name": "What do you track?",
 				"acceptedAnswer": {
 					"@type": "Answer",
-					"text": "We track two things: (1) AI Engine Insights—how AI platforms mention your brand, which products they recommend, what sources they cite, and how you compare to competitors. (2) Traffic Analytics—visitors coming from AI platforms, their behavior on your site, and conversion to purchases."
+					"text": "We monitor AI responses for queries relevant to your products—skincare routines, ingredient searches, product comparisons, 'best of' lists. We track brand mentions, product recommendations, sentiment, and citations across ChatGPT, Perplexity, Google AI Overviews, and Claude."
 				}
 			},
 			{
 				"@type": "Question",
-				"name": "Which AI platforms do you monitor?",
+				"name": "Which beauty brands is this for?",
 				"acceptedAnswer": {
 					"@type": "Answer",
-					"text": "We currently monitor ChatGPT and Google AI Overviews. We're continuously expanding coverage as AI search evolves."
-				}
-			},
-			{
-				"@type": "Question",
-				"name": "How do you generate search prompts?",
-				"acceptedAnswer": {
-					"@type": "Answer",
-					"text": "We use a proprietary prompt generation engine to create diverse and relevant queries that simulate what high-intent real consumers would ask. This gives you visibility into how AI responds to natural shopping questions."
-				}
-			},
-			{
-				"@type": "Question",
-				"name": "How do you track AI traffic to my store?",
-				"acceptedAnswer": {
-					"@type": "Answer",
-					"text": "We provide integrations with Shopify and other e-commerce platforms. Our tracking identifies visitors coming from AI platforms and attributes sessions and conversions to specific AI sources."
+					"text": "Any brand selling skincare, makeup, haircare, or bodycare online. We work with brands from $5M to $500M+ in revenue—anyone competing for visibility in a crowded category."
 				}
 			}
 		]

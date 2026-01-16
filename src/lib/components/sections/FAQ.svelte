@@ -4,34 +4,29 @@
 
 	const faqs = [
 		{
-			question: 'What is Rix?',
+			question: 'Why does AI search matter for beauty brands?',
 			answer:
-				'Rix is an AI search analytics platform for e-commerce brands. We give you complete visibility into how AI platforms like ChatGPT and Google AI represent your brand, recommend your products, and drive traffic to your store.'
+				"Searches like 'best sunscreen for oily skin' or 'Vitamin C serum under $30' used to happen on Google. Now they happen in ChatGPT, Perplexity, and Google AI Overviews—and AI doesn't return ten blue links. It recommends specific products. If AI isn't recommending yours, you're invisible at the moment of decision."
 		},
 		{
-			question: 'Who is Rix for?',
+			question: "How is Rix different from Shopify's AI analytics?",
 			answer:
-				'Marketing teams at e-commerce brands who want to understand and optimize their presence in AI search.'
+				"Shopify tells you orders and conversions from your store. Rix tells you what's happening before consumers even reach your site—how AI talks about your brand, who it recommends instead, and why."
+		},
+		{
+			question: 'What competitive insights do I get?',
+			answer:
+				'Share of voice for beauty queries, gap analysis showing where competitors outrank you, and source intelligence showing which beauty publications AI relies on.'
 		},
 		{
 			question: 'What do you track?',
 			answer:
-				'We track two things: (1) AI Engine Insights—how AI platforms mention your brand, which products they recommend, what sources they cite, and how you compare to competitors. (2) Traffic Analytics—visitors coming from AI platforms, their behavior on your site, and conversion to purchases.'
+				'We monitor AI responses for queries relevant to your products—skincare routines, ingredient searches, product comparisons, "best of" lists. We track brand mentions, product recommendations, sentiment, and citations across ChatGPT, Perplexity, Google AI Overviews, and Claude.'
 		},
 		{
-			question: 'Which AI platforms do you monitor?',
+			question: 'Which beauty brands is this for?',
 			answer:
-				"We currently monitor ChatGPT and Google AI Overviews. We're continuously expanding coverage as AI search evolves."
-		},
-		{
-			question: 'How do you generate search prompts?',
-			answer:
-				'We use a proprietary prompt generation engine to create diverse and relevant queries that simulate what high-intent real consumers would ask. This gives you visibility into how AI responds to natural shopping questions.'
-		},
-		{
-			question: 'How do you track AI traffic to my store?',
-			answer:
-				'We provide integrations with Shopify and other e-commerce platforms. Our tracking identifies visitors coming from AI platforms and attributes sessions and conversions to specific AI sources.'
+				'Any brand selling skincare, makeup, haircare, or bodycare online. We work with brands from $5M to $500M+ in revenue—anyone competing for visibility in a crowded category.'
 		}
 	];
 
