@@ -31,7 +31,7 @@
 		{
 			question: 'How does Rix collect data?',
 			answer:
-				'We run queries across AI platforms the same way consumers do—no API shortcuts. This matters because API responses often differ from what real users see. You get the actual AI output your customers get.'
+				'We run queries across AI platforms the same way consumers do, no API shortcuts, for maximum accuracy. Then we use proprietary prompt generation engine to generate high-intent real world questions that closely represent real user behaviors.'
 		},
 		{
 			question: 'What publications and sources does AI rely on?',

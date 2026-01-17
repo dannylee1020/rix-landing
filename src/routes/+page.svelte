@@ -4,7 +4,6 @@
 	import HowItWorks from '$lib/components/sections/HowItWorks.svelte';
 	import DetailedFeatures from '$lib/components/sections/DetailedFeatures.svelte';
 	import FAQ from '$lib/components/sections/FAQ.svelte';
-	import ClosingCTA from '$lib/components/sections/ClosingCTA.svelte';
 	import Footer from '$lib/components/sections/Footer.svelte';
 </script>
 
@@ -92,7 +91,6 @@
 		<HowItWorks />
 		<DetailedFeatures />
 		<FAQ />
-		<ClosingCTA />
 	</main>
 	<Footer />
 </div>
