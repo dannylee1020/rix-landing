@@ -18,7 +18,9 @@
 				<div class="flex flex-col items-center gap-12 md:flex-row md:items-start md:gap-64">
 					<!-- Rix Branding -->
 					<div class="flex-shrink-0 text-center md:text-left">
-						<span class="text-4xl font-bold tracking-tight md:text-5xl">Rix</span>
+						<div class="flex items-center gap-3">
+							<span class="text-4xl font-bold tracking-tight md:text-5xl">Rix</span>
+						</div>
 					</div>
 
 					<!-- CTA -->
