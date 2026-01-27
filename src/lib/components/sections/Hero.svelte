@@ -1,35 +1,47 @@
 <script lang="ts">
-	import { Button } from '$lib/components/ui/button';
-	import { ArrowRight } from '@lucide/svelte';
 </script>
 
-<section class="relative overflow-hidden bg-white pt-32 pb-16" style="margin-top: -32px;">
-	<!-- Subtle radial glow behind heading -->
-	<div
-		class="pointer-events-none absolute top-1/3 left-1/2 h-[600px] w-[900px] -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(ellipse_at_center,_rgba(5,74,247,0.08)_0%,_rgba(5,74,247,0.03)_50%,_transparent_70%)]"
-	></div>
+<section class="mx-auto max-w-7xl bg-white px-6">
+	<div class="grid-container-bordered relative">
+		<!-- Dot grid background with fade from bottom to top -->
+		<div
+			class="pointer-events-none absolute inset-0"
+			style="background-image: radial-gradient(circle, rgba(0,0,0,0.15) 1.5px, transparent 1.5px); background-size: 16px 16px;"
+		></div>
+		<!-- Fade overlay: white at top, transparent at bottom (earlier fade) -->
+		<div
+			class="pointer-events-none absolute inset-0"
+			style="background: linear-gradient(to bottom, white 0%, white 40%, transparent 85%);"
+		></div>
 
-	<div class="relative z-10 container mx-auto max-w-screen-xl px-6">
-		<div class="mx-auto max-w-3xl text-center">
-			<h1
-				class="mb-6 text-4xl leading-[1.15] font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl"
-			>
-				AI search analytics
-				<br />
-				for <span class="text-[var(--brand)]">beauty brands</span>
-			</h1>
+		<div class="relative px-6 pt-28 pb-24 md:px-10 md:pt-36 md:pb-32">
+			<div class="mx-auto max-w-xl text-center">
+				<!-- Headline -->
+				<h1
+					class="mb-8 text-3xl leading-[1.1] font-semibold tracking-tight text-foreground sm:text-4xl lg:text-6xl"
+				>
+					AI Search Analytics<br />for Beauty Brands
+				</h1>
 
-			<p class="mx-auto mb-10 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-				See how AI recommends products, which brands dominate your category, and why consumers find
-				your competitors instead of you.
-			</p>
-
-			<a href="/join" class="inline-block">
-				<Button size="lg" class="h-12 px-8 text-base font-medium transition-colors duration-150">
-					Request Access
-					<ArrowRight class="ml-2 h-4 w-4" />
-				</Button>
-			</a>
+				<!-- CTA buttons - sleek design -->
+				<div class="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-3">
+					<a
+						href="/join"
+						class="inline-flex h-11 items-center justify-center rounded-full bg-foreground px-6 text-sm font-medium text-background transition-all duration-200 hover:scale-[1.02] hover:bg-foreground/90"
+					>
+						Request Access
+					</a>
+					<a
+						href="mailto:daniel.lee@tryrix.com"
+						class="inline-flex h-11 items-center justify-center rounded-full border border-neutral-200 bg-white px-6 text-sm font-medium text-foreground transition-all duration-200 hover:border-neutral-300 hover:bg-neutral-50"
+					>
+						Talk to Us
+					</a>
+				</div>
+			</div>
 		</div>
+
+		<!-- Bottom divider -->
+		<div class="grid-divider"></div>
 	</div>
 </section>

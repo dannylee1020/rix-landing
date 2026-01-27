@@ -67,35 +67,45 @@
 	}
 </script>
 
-<section id="faq" class="bg-white py-24">
-	<div class="container mx-auto max-w-5xl px-6">
-		<h2 class="mb-10 text-center text-2xl font-bold tracking-tight text-foreground md:text-3xl">
-			Frequently Asked Questions
-		</h2>
-
-		<div class="divide-y divide-border">
-			{#each faqs as faq, index}
-				<div>
-					<button
-						class="flex w-full items-center justify-between py-5 text-left transition-colors duration-150"
-						onclick={() => toggle(index)}
-						aria-expanded={openIndex === index}
-					>
-						<span class="text-sm font-medium text-foreground">{faq.question}</span>
-						<ChevronDown
-							class="ml-4 h-4 w-4 flex-shrink-0 text-muted-foreground transition-transform duration-150 {openIndex ===
-							index
-								? 'rotate-180'
-								: ''}"
-						/>
-					</button>
-					{#if openIndex === index}
-						<div transition:slide={{ duration: 150 }} class="pb-5">
-							<p class="text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>
-						</div>
-					{/if}
+<section id="faq" class="w-full bg-neutral-50">
+	<div class="mx-auto max-w-7xl px-6">
+		<div class="grid-container-bordered">
+			<div class="px-6 py-24 md:px-10">
+				<!-- Section header -->
+				<div class="mx-auto max-w-xl text-center mb-12">
+					<span class="mb-3 inline-block text-xs font-semibold tracking-widest text-[var(--brand)] uppercase">
+						FAQ
+					</span>
+					<h2 class="text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
+						Frequently Asked Questions
+					</h2>
 				</div>
-			{/each}
+
+				<!-- FAQ accordion -->
+				<div class="mx-auto max-w-2xl">
+					<div class="rounded-xl border border-[var(--grid-line-strong)] bg-white">
+						{#each faqs as faq, index}
+							<div class="border-b border-[var(--grid-line-strong)] last:border-b-0">
+								<button
+									class="flex w-full items-center justify-between px-6 py-5 text-left transition-colors duration-150 hover:bg-neutral-50"
+									onclick={() => toggle(index)}
+									aria-expanded={openIndex === index}
+								>
+									<span class="pr-4 text-sm font-medium text-foreground">{faq.question}</span>
+									<ChevronDown
+										class="h-4 w-4 flex-shrink-0 text-muted-foreground transition-transform duration-150 {openIndex === index ? 'rotate-180' : ''}"
+									/>
+								</button>
+								{#if openIndex === index}
+									<div transition:slide={{ duration: 150 }} class="px-6 pb-5">
+										<p class="text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>
+									</div>
+								{/if}
+							</div>
+						{/each}
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

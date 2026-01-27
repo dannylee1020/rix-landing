@@ -1,10 +1,69 @@
 <script lang="ts">
 	import Navigation from '$lib/components/sections/Navigation.svelte';
 	import Hero from '$lib/components/sections/Hero.svelte';
-	import HowItWorks from '$lib/components/sections/HowItWorks.svelte';
-	import DetailedFeatures from '$lib/components/sections/DetailedFeatures.svelte';
+	import FeatureSection from '$lib/components/sections/FeatureSection.svelte';
 	import FAQ from '$lib/components/sections/FAQ.svelte';
 	import Footer from '$lib/components/sections/Footer.svelte';
+
+	import {
+		Eye,
+		MessageSquare,
+		ThumbsUp,
+		TrendingUp,
+		ChartNoAxesColumn,
+		Search,
+		Compass,
+		FileText
+	} from '@lucide/svelte';
+
+	const visibilityFeatures = [
+		{
+			icon: Eye,
+			title: 'Brand Monitoring',
+			description: 'Track how ChatGPT, Perplexity, and Google AI describe your brand and products.'
+		},
+		{
+			icon: ThumbsUp,
+			title: 'Sentiment & Positioning',
+			description:
+				'Is AI calling you "affordable" when you\'re positioning as premium? Know how AI frames you.'
+		},
+		{
+			icon: MessageSquare,
+			title: 'Product Recommendations',
+			description: 'Which of your SKUs get recommended, for which queries, and how often.'
+		},
+		{
+			icon: TrendingUp,
+			title: 'Trend Detection',
+			description: 'See emerging queries and topics gaining traction before your competitors do.'
+		}
+	];
+
+	const competitiveFeatures = [
+		{
+			icon: ChartNoAxesColumn,
+			title: 'Share of Voice',
+			description:
+				'How often AI recommends you vs. competitors for queries like "best retinol serum."'
+		},
+		{
+			icon: Search,
+			title: 'Gap Analysis',
+			description: "Topics where competitors get recommended and you don't. Find out why."
+		},
+		{
+			icon: Compass,
+			title: 'Opportunity Mapping',
+			description: 'Queries with no dominant brand—categories you can own before competitors do.'
+		},
+		{
+			icon: FileText,
+			title: 'Source Intelligence',
+			description:
+				"Which publications AI cites when recommending products. See who's driving AI's picks."
+		}
+	];
 </script>
 
 <svelte:head>
@@ -84,12 +143,26 @@
 	</script>`}
 </svelte:head>
 
-<div class="bg-background text-foreground min-h-screen">
+<div class="min-h-screen bg-background text-foreground">
 	<Navigation />
 	<main>
 		<Hero />
-		<HowItWorks />
-		<DetailedFeatures />
+		<FeatureSection
+			label="AI Visibility"
+			headline="See how AI platforms<br />talk about you"
+			description="See your brand through AI's eyes—visibility rankings, product recommendations, trusted sources, and the exact language AI uses to describe you."
+			image="/overview.png"
+			imageAlt="AI Visibility Dashboard"
+			features={visibilityFeatures}
+		/>
+		<FeatureSection
+			label="Competitive Intelligence"
+			headline="Know where you win<br />and where you lose"
+			description="Discover where competitors win, the sources AI trusts across your category, and where to focus your content efforts."
+			image="/competition.png"
+			imageAlt="Competitive Intelligence Dashboard"
+			features={competitiveFeatures}
+		/>
 		<FAQ />
 	</main>
 	<Footer />

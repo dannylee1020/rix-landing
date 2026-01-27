@@ -9,7 +9,7 @@ const pool = new Pool({
 
 export const POST: RequestHandler = async ({ request }) => {
 	try {
-		const { name, email } = await request.json();
+		const { name, email, role, brandName, website } = await request.json();
 
 		// Validate name
 		if (!name || typeof name !== 'string' || name.trim().length === 0) {
@@ -27,12 +27,28 @@ export const POST: RequestHandler = async ({ request }) => {
 			return json({ error: 'Invalid email format' }, { status: 400 });
 		}
 
+		// Validate role
+		const validRoles = ['founder', 'growth', 'marketing', 'operation', 'others'];
+		if (!role || typeof role !== 'string' || !validRoles.includes(role)) {
+			return json({ error: 'Valid role is required' }, { status: 400 });
+		}
+
+		// Validate brand name
+		if (!brandName || typeof brandName !== 'string' || brandName.trim().length === 0) {
+			return json({ error: 'Brand name is required' }, { status: 400 });
+		}
+
+		// Validate website
+		if (!website || typeof website !== 'string' || website.trim().length === 0) {
+			return json({ error: 'Website is required' }, { status: 400 });
+		}
+
 		// Insert into database
 		const client = await pool.connect();
 		try {
 			await client.query(
-				'INSERT INTO waitlist (name, email) VALUES ($1, $2)',
-				[name.trim(), email]
+				'INSERT INTO waitlist (name, email, role, brand_name, website) VALUES ($1, $2, $3, $4, $5)',
+				[name.trim(), email.trim(), role, brandName.trim(), website.trim()]
 			);
 			return json({ success: true, message: 'Successfully joined waitlist!' });
 		} catch (dbError: any) {

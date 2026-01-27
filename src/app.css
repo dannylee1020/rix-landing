@@ -20,6 +20,10 @@
 	--brand-hover: #1e2dd4;
 	--brand-light: rgba(5, 74, 247, 0.05);
 
+	/* Grid line colors */
+	--grid-line: rgba(0, 0, 0, 0.06);
+	--grid-line-strong: rgba(0, 0, 0, 0.1);
+
 	/* Motion timing */
 	--ease-default: cubic-bezier(0.4, 0, 0.2, 1);
 	--ease-in: cubic-bezier(0.4, 0, 1, 1);
@@ -90,6 +94,10 @@
 	--sidebar-accent-foreground: oklch(0.984 0.003 247.858);
 	--sidebar-border: oklch(1 0 0 / 10%);
 	--sidebar-ring: oklch(0.551 0.027 264.364);
+
+	/* Dark mode grid lines */
+	--grid-line: rgba(255, 255, 255, 0.06);
+	--grid-line-strong: rgba(255, 255, 255, 0.1);
 }
 
 @theme inline {
@@ -139,5 +147,85 @@
 		font-feature-settings: 'liga' 1, 'calt' 1;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
+/* Visible Grid System */
+@layer components {
+	/* Container with solid left/right border lines */
+	.grid-container-bordered {
+		border-left: 1px solid var(--grid-line-strong);
+		border-right: 1px solid var(--grid-line-strong);
+	}
+
+	/* 4-column grid for feature cards */
+	.feature-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	@media (max-width: 1023px) {
+		.feature-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (max-width: 639px) {
+		.feature-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	/* Horizontal divider */
+	.grid-divider {
+		border-top: 1px solid var(--grid-line-strong);
+	}
+
+	/* Legacy grid container - keeping for compatibility */
+	.grid-container {
+		@apply grid gap-6 mx-auto px-6 max-w-7xl;
+		grid-template-columns: repeat(12, minmax(0, 1fr));
+	}
+
+	@media (max-width: 1023px) {
+		.grid-container {
+			grid-template-columns: repeat(8, minmax(0, 1fr));
+		}
+	}
+
+	@media (max-width: 767px) {
+		.grid-container {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
+	}
+
+	.col-full {
+		grid-column: 1 / -1;
+	}
+
+	.col-centered {
+		grid-column: 3 / 11;
+	}
+
+	@media (max-width: 1023px) {
+		.col-centered {
+			grid-column: 1 / -1;
+		}
+	}
+
+	.col-narrow {
+		grid-column: 4 / 10;
+	}
+
+	@media (max-width: 1023px) {
+		.col-narrow {
+			grid-column: 2 / 8;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.col-narrow {
+			grid-column: 1 / -1;
+		}
 	}
 }
