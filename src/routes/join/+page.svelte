@@ -1,8 +1,3 @@
-<svelte:head>
-	<title>Request Access - Rix</title>
-	<meta name="robots" content="noindex, follow" />
-</svelte:head>
-
 <script lang="ts">
 	let name = $state('');
 	let email = $state('');
@@ -77,7 +72,12 @@
 	}
 </script>
 
-<div class="relative min-h-screen bg-white overflow-hidden">
+<svelte:head>
+	<title>Request Access - Rix</title>
+	<meta name="robots" content="noindex, follow" />
+</svelte:head>
+
+<div class="relative min-h-screen overflow-hidden bg-white">
 	<!-- Animated gradient orbs -->
 	<div class="pointer-events-none absolute inset-0 overflow-hidden">
 		<div
@@ -85,7 +85,7 @@
 			style="background: radial-gradient(circle, var(--brand) 0%, transparent 70%); animation: float1 20s ease-in-out infinite;"
 		></div>
 		<div
-			class="absolute -bottom-[30%] -right-[20%] h-[70%] w-[50%] rounded-full opacity-[0.04] blur-3xl"
+			class="absolute -right-[20%] -bottom-[30%] h-[70%] w-[50%] rounded-full opacity-[0.04] blur-3xl"
 			style="background: radial-gradient(circle, var(--brand) 0%, transparent 70%); animation: float2 25s ease-in-out infinite;"
 		></div>
 	</div>
@@ -124,9 +124,9 @@
 			</div>
 
 			<!-- Split layout container -->
-			<div class="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+			<div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
 				<!-- Left side: Value proposition -->
-				<div class="text-center lg:text-left order-2 lg:order-1">
+				<div class="order-2 text-center lg:order-1 lg:text-left">
 					<!-- Logo -->
 					<div class="mb-8">
 						<a
@@ -144,17 +144,15 @@
 						See what AI says<br class="hidden sm:block" /> about your brand
 					</h1>
 
-					<p class="mt-4 text-base text-muted-foreground max-w-md mx-auto lg:mx-0">
-						Get early access to AI search analytics. Understand how ChatGPT, Perplexity, and other
-						AI assistants represent your brand.
+					<p class="mx-auto mt-4 max-w-md text-base text-muted-foreground lg:mx-0">
+						Get early access to AI search analytics. Understand how ChatGPT, Google AI, and other AI
+						search engines represent your brand.
 					</p>
 
 					<!-- Benefits list -->
 					<div class="mt-8 space-y-3">
 						{#each benefits as benefit}
-							<div
-								class="flex items-center gap-3 justify-center lg:justify-start group"
-							>
+							<div class="group flex items-center justify-center gap-3 lg:justify-start">
 								<div
 									class="flex h-8 w-8 items-center justify-center rounded-lg bg-neutral-100 transition-colors duration-200 group-hover:bg-neutral-200"
 								>
@@ -169,7 +167,9 @@
 											stroke-linecap="round"
 											stroke-linejoin="round"
 										>
-											<path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+											<path
+												d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+											/>
 											<circle cx="12" cy="12" r="3" />
 										</svg>
 									{:else if benefit.icon === 'chart'}
@@ -197,7 +197,9 @@
 											stroke-linecap="round"
 											stroke-linejoin="round"
 										>
-											<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+											<path
+												d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+											/>
 											<path d="m9 12 2 2 4-4" />
 										</svg>
 									{:else if benefit.icon === 'sparkle'}
@@ -211,7 +213,9 @@
 											stroke-linecap="round"
 											stroke-linejoin="round"
 										>
-											<path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+											<path
+												d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+											/>
 										</svg>
 									{/if}
 								</div>
@@ -221,8 +225,8 @@
 					</div>
 
 					<!-- Social proof -->
-					<div class="mt-10 pt-8 border-t border-neutral-100">
-						<p class="text-xs text-muted-foreground uppercase tracking-wider mb-3">
+					<div class="mt-10 border-t border-neutral-100 pt-8">
+						<p class="mb-3 text-xs tracking-wider text-muted-foreground uppercase">
 							Built for beauty brands
 						</p>
 						<p class="text-sm text-muted-foreground">
@@ -263,7 +267,7 @@
 									placeholder="Your name"
 									bind:value={name}
 									disabled={isSubmitting}
-									class="h-11 w-full rounded-lg border border-neutral-200 bg-white px-3.5 text-sm text-foreground placeholder:text-muted-foreground/60 transition-all duration-150 focus:border-neutral-400 focus:ring-2 focus:ring-neutral-100 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+									class="h-11 w-full rounded-lg border border-neutral-200 bg-white px-3.5 text-sm text-foreground transition-all duration-150 placeholder:text-muted-foreground/60 focus:border-neutral-400 focus:ring-2 focus:ring-neutral-100 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
 								/>
 							</div>
 
@@ -278,7 +282,7 @@
 									placeholder="you@company.com"
 									bind:value={email}
 									disabled={isSubmitting}
-									class="h-11 w-full rounded-lg border border-neutral-200 bg-white px-3.5 text-sm text-foreground placeholder:text-muted-foreground/60 transition-all duration-150 focus:border-neutral-400 focus:ring-2 focus:ring-neutral-100 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+									class="h-11 w-full rounded-lg border border-neutral-200 bg-white px-3.5 text-sm text-foreground transition-all duration-150 placeholder:text-muted-foreground/60 focus:border-neutral-400 focus:ring-2 focus:ring-neutral-100 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
 								/>
 							</div>
 
@@ -301,7 +305,7 @@
 										{/each}
 									</select>
 									<svg
-										class="pointer-events-none absolute right-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
+										class="pointer-events-none absolute top-1/2 right-3.5 h-4 w-4 -translate-y-1/2 text-muted-foreground"
 										xmlns="http://www.w3.org/2000/svg"
 										viewBox="0 0 24 24"
 										fill="none"
@@ -326,7 +330,7 @@
 									placeholder="Your brand or company name"
 									bind:value={brandName}
 									disabled={isSubmitting}
-									class="h-11 w-full rounded-lg border border-neutral-200 bg-white px-3.5 text-sm text-foreground placeholder:text-muted-foreground/60 transition-all duration-150 focus:border-neutral-400 focus:ring-2 focus:ring-neutral-100 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+									class="h-11 w-full rounded-lg border border-neutral-200 bg-white px-3.5 text-sm text-foreground transition-all duration-150 placeholder:text-muted-foreground/60 focus:border-neutral-400 focus:ring-2 focus:ring-neutral-100 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
 								/>
 							</div>
 
@@ -341,7 +345,7 @@
 									placeholder="https://yourbrand.com"
 									bind:value={website}
 									disabled={isSubmitting}
-									class="h-11 w-full rounded-lg border border-neutral-200 bg-white px-3.5 text-sm text-foreground placeholder:text-muted-foreground/60 transition-all duration-150 focus:border-neutral-400 focus:ring-2 focus:ring-neutral-100 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+									class="h-11 w-full rounded-lg border border-neutral-200 bg-white px-3.5 text-sm text-foreground transition-all duration-150 placeholder:text-muted-foreground/60 focus:border-neutral-400 focus:ring-2 focus:ring-neutral-100 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
 								/>
 							</div>
 
@@ -352,9 +356,7 @@
 									disabled={isSubmitting}
 									class="group relative h-12 w-full overflow-hidden rounded-full bg-foreground text-sm font-medium text-background transition-all duration-200 hover:scale-[1.01] disabled:pointer-events-none disabled:opacity-50"
 								>
-									<span
-										class="relative z-10 flex items-center justify-center gap-2"
-									>
+									<span class="relative z-10 flex items-center justify-center gap-2">
 										{#if isSubmitting}
 											<svg
 												class="h-4 w-4 animate-spin"
@@ -401,8 +403,8 @@
 							{#if message}
 								<div
 									class="rounded-lg px-4 py-3 text-center text-sm {messageType === 'success'
-										? 'bg-green-50 text-green-700 border border-green-100'
-										: 'bg-red-50 text-red-700 border border-red-100'}"
+										? 'border border-green-100 bg-green-50 text-green-700'
+										: 'border border-red-100 bg-red-50 text-red-700'}"
 								>
 									{#if messageType === 'success'}
 										<div class="flex items-center justify-center gap-2">

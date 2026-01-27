@@ -19,49 +19,54 @@
 	const visibilityFeatures = [
 		{
 			icon: Eye,
-			title: 'Brand Monitoring',
-			description: 'Track how ChatGPT, Perplexity, and Google AI describe your brand and products.'
-		},
-		{
-			icon: ThumbsUp,
-			title: 'Sentiment & Positioning',
+			title: 'Visibility',
 			description:
-				'Is AI calling you "affordable" when you\'re positioning as premium? Know how AI frames you.'
+				'Track when and where AI mentions your brand across skincare routines, ingredient searches, and "best of" lists.'
 		},
 		{
 			icon: MessageSquare,
 			title: 'Product Recommendations',
-			description: 'Which of your SKUs get recommended, for which queries, and how often.'
+			description:
+				'See which SKUs get recommended, for which beauty queries, and which products AI overlooks.'
 		},
 		{
-			icon: TrendingUp,
-			title: 'Trend Detection',
-			description: 'See emerging queries and topics gaining traction before your competitors do.'
+			icon: FileText,
+			title: 'Sources',
+			description:
+				'Discover the publications and content AI trusts when recommending products in your category.'
+		},
+		{
+			icon: ThumbsUp,
+			title: 'Sentiments',
+			description:
+				'Know how AI positions you. Is it "clean beauty" or "affordable dupe"? See the language shaping perception.'
 		}
 	];
 
 	const competitiveFeatures = [
 		{
 			icon: ChartNoAxesColumn,
-			title: 'Share of Voice',
+			title: 'Category Competition',
 			description:
-				'How often AI recommends you vs. competitors for queries like "best retinol serum."'
+				'See how you rank against competitors across your category. Know where you lead and where you fall behind.'
 		},
 		{
 			icon: Search,
-			title: 'Gap Analysis',
-			description: "Topics where competitors get recommended and you don't. Find out why."
+			title: 'Topic Competition',
+			description:
+				'Track who dominates specific queries like "best retinol serum" or "hydrating moisturizer for dry skin."'
 		},
 		{
 			icon: Compass,
-			title: 'Opportunity Mapping',
-			description: 'Queries with no dominant brand—categories you can own before competitors do.'
+			title: 'Head to Head',
+			description:
+				'Deep dive into any competitor. Compare recommendations, positioning, and the sources driving their visibility.'
 		},
 		{
-			icon: FileText,
-			title: 'Source Intelligence',
+			icon: TrendingUp,
+			title: 'Actionable Insights',
 			description:
-				"Which publications AI cites when recommending products. See who's driving AI's picks."
+				'Spot gaps, uncover opportunities, and get clear next steps on how to close the distance.'
 		}
 	];
 </script>

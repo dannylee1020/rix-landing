@@ -44,7 +44,7 @@
 		<div class="hidden items-center md:flex">
 			<a
 				href="mailto:daniel.lee@tryrix.com"
-				class="inline-flex h-8 items-center justify-center rounded-full bg-foreground px-4 text-sm font-medium text-background transition-all duration-150 hover:bg-foreground/90"
+				class="inline-flex h-8 items-center justify-center rounded-full bg-foreground px-4 text-sm font-medium text-background shadow-md transition-all duration-150 hover:bg-foreground/90"
 			>
 				Talk to Us
 			</a>
@@ -94,7 +94,7 @@
 				<div class="pt-2">
 					<a
 						href="mailto:daniel.lee@tryrix.com"
-						class="inline-flex h-9 items-center justify-center rounded-full bg-foreground px-5 text-sm font-medium text-background"
+						class="inline-flex h-9 items-center justify-center rounded-full bg-foreground px-5 text-sm font-medium text-background shadow-md"
 						onclick={() => (mobileMenuOpen = false)}
 					>
 						Talk to Us
