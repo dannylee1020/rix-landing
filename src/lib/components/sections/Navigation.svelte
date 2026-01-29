@@ -14,7 +14,7 @@
 	class="sticky top-0 z-50 w-full border-b border-[var(--grid-line-strong)] bg-white/90 backdrop-blur-md"
 	aria-label="Main navigation"
 >
-	<div class="mx-auto flex h-12 max-w-7xl items-center justify-between px-6 md:px-12 lg:px-16">
+	<div class="mx-auto flex h-12 max-w-6xl items-center justify-between px-6 md:px-12 lg:px-16">
 		<!-- Logo -->
 		<a href="/" class="flex items-center">
 			<span class="text-lg font-semibold tracking-tight text-foreground">Rix</span>

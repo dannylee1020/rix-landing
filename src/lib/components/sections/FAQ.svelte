@@ -68,7 +68,7 @@
 </script>
 
 <section id="faq" class="w-full bg-neutral-50">
-	<div class="mx-auto max-w-7xl px-6">
+	<div class="mx-auto max-w-6xl px-6">
 		<div class="grid-container-bordered">
 			<div class="px-6 py-24 md:px-10">
 				<!-- Section header -->

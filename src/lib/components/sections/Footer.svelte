@@ -20,7 +20,7 @@
 		<div class="grid grid-cols-1 gap-12 md:grid-cols-2">
 			<div class="flex flex-col justify-center">
 				<span class="text-4xl font-semibold tracking-tight md:text-5xl">Rix</span>
-				<p class="mt-3 text-sm text-white/50">AI Search Analytics for Beauty Brands</p>
+				<p class="mt-3 text-sm text-white/50">AI Search Intelligence for Beauty Brands</p>
 			</div>
 
 			<div>

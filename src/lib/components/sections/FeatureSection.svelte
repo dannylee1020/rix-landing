@@ -19,7 +19,7 @@
 	let { label, headline, description, image, imageAlt, features }: Props = $props();
 </script>
 
-<section class="mx-auto max-w-7xl px-6">
+<section class="mx-auto max-w-6xl px-6">
 	<!-- Header row with dotted borders - left aligned -->
 	<div class="header-row-dotted">
 		<div class="px-6 py-16 text-left md:px-10 md:py-20">

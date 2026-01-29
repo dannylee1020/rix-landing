@@ -72,29 +72,29 @@
 </script>
 
 <svelte:head>
-	<title>Rix - AI Search Analytics for Beauty Brands</title>
+	<title>Rix - AI Search Intelligence for Beauty Brands</title>
 	<meta
 		name="description"
-		content="AI search analytics for beauty brands. See how AI recommends products, which brands dominate your category, and why consumers find your competitors instead of you."
+		content="AI search intelligence for beauty brands. See how AI recommends products, which brands dominate your category, and why consumers find your competitors instead of you."
 	/>
 	<meta
 		name="keywords"
-		content="AI search analytics, beauty brands, skincare, makeup, haircare, ChatGPT shopping, AI product recommendations, beauty marketing"
+		content="AI search intelligence, beauty brands, skincare, makeup, haircare, ChatGPT shopping, AI product recommendations, beauty marketing"
 	/>
 	<link rel="canonical" href="https://tryrix.com/" />
-	<meta property="og:title" content="Rix - AI Search Analytics for Beauty Brands" />
+	<meta property="og:title" content="Rix - AI Search Intelligence for Beauty Brands" />
 	<meta
 		property="og:description"
-		content="AI search analytics for beauty brands. See how AI recommends products, which brands dominate your category, and why consumers find your competitors instead of you."
+		content="AI search intelligence for beauty brands. See how AI recommends products, which brands dominate your category, and why consumers find your competitors instead of you."
 	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://tryrix.com/" />
 	<meta property="og:site_name" content="Rix" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Rix - AI Search Analytics for Beauty Brands" />
+	<meta name="twitter:title" content="Rix - AI Search Intelligence for Beauty Brands" />
 	<meta
 		name="twitter:description"
-		content="AI search analytics for beauty brands. See how AI recommends products, which brands dominate your category, and why consumers find your competitors instead of you."
+		content="AI search intelligence for beauty brands. See how AI recommends products, which brands dominate your category, and why consumers find your competitors instead of you."
 	/>
 
 	<!-- FAQ Schema Markup -->

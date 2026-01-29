@@ -7,7 +7,7 @@
 	<title>Privacy Policy - Rix</title>
 	<meta
 		name="description"
-		content="Rix privacy policy. Learn how we collect, use, and protect your data when using our AI search analytics platform for e-commerce."
+		content="Rix privacy policy. Learn how we collect, use, and protect your data when using our AI search intelligence platform for e-commerce."
 	/>
 	<link rel="canonical" href="https://tryrix.com/privacy" />
 </svelte:head>
@@ -40,7 +40,7 @@
 				<!-- Introduction -->
 				<section class="flex flex-col gap-5">
 					<p class="text-foreground text-base leading-relaxed">
-						Rix ("we", "our", or "us") provides AI search analytics services to e-commerce brands.
+						Rix ("we", "our", or "us") provides AI search intelligence services to e-commerce brands.
 						This Privacy Policy explains how we collect, use, disclose, and protect information when
 						you use our website, dashboard, and analytics platform (collectively, the "Services").
 					</p>
@@ -192,7 +192,7 @@
 								class="before:bg-border relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full"
 							>
 								<span class="font-medium">Provide Our Services:</span> To operate the platform, deliver
-								AI search analytics, generate visibility reports, track traffic attribution, and provide
+								AI search intelligence, generate visibility reports, track traffic attribution, and provide
 								competitive intelligence.
 							</li>
 							<li

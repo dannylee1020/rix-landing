@@ -183,7 +183,7 @@
 
 	/* Legacy grid container - keeping for compatibility */
 	.grid-container {
-		@apply grid gap-6 mx-auto px-6 max-w-7xl;
+		@apply grid gap-6 mx-auto px-6 max-w-6xl;
 		grid-template-columns: repeat(12, minmax(0, 1fr));
 	}
 

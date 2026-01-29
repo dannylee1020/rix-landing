@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<section class="mx-auto max-w-7xl bg-white px-6">
+<section class="mx-auto max-w-6xl bg-white px-6">
 	<div class="grid-container-bordered relative">
 		<!-- Dot grid background with fade from bottom to top -->
 		<div
@@ -20,7 +20,7 @@
 				<h1
 					class="mb-8 text-3xl leading-[1.1] font-semibold tracking-tight text-foreground sm:text-4xl lg:text-6xl"
 				>
-					AI Search Analytics<br />for Beauty Brands
+					<span class="whitespace-nowrap">AI Search Intelligence</span><br />for Beauty Brands
 				</h1>
 
 				<!-- CTA buttons - sleek design -->

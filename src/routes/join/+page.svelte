@@ -145,7 +145,7 @@
 					</h1>
 
 					<p class="mx-auto mt-4 max-w-md text-base text-muted-foreground lg:mx-0">
-						Get early access to AI search analytics. Understand how ChatGPT, Google AI, and other AI
+						Get early access to AI search intelligence. Understand how ChatGPT, Google AI, and other AI
 						search engines represent your brand.
 					</p>
 

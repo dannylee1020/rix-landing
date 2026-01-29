@@ -7,7 +7,7 @@
 	<title>Terms of Service - Rix</title>
 	<meta
 		name="description"
-		content="Rix terms of service. Read our usage terms and agreements for the AI search analytics platform for e-commerce brands."
+		content="Rix terms of service. Read our usage terms and agreements for the AI search intelligence platform for e-commerce brands."
 	/>
 	<link rel="canonical" href="https://tryrix.com/terms" />
 </svelte:head>
@@ -56,7 +56,7 @@
 
 					<div class="ml-8">
 						<p class="text-foreground text-base leading-relaxed">
-							Rix provides AI search analytics services for e-commerce brands. We help you
+							Rix provides AI search intelligence services for e-commerce brands. We help you
 							understand how AI platforms like ChatGPT and Google AI represent your brand,
 							recommend your products, and drive traffic to your store. Our platform delivers
 							visibility insights, competitive intelligence, and revenue attribution analytics.
