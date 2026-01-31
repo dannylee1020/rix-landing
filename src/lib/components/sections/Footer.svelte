@@ -3,20 +3,24 @@
 	import { ArrowRight, Mail } from '@lucide/svelte';
 </script>
 
-<footer class="relative w-full bg-black text-white">
+<footer class="relative w-full overflow-hidden bg-black text-white">
 	<!-- White dot grid background with fade from top to bottom -->
 	<div
-		class="pointer-events-none absolute inset-0"
+		class="pointer-events-none absolute inset-0 z-10"
 		style="background-image: radial-gradient(circle, rgba(255,255,255,0.18) 1.5px, transparent 1.5px); background-size: 16px 16px;"
 	></div>
+	
+	<!-- Ambient Glow -->
+	<div class="pointer-events-none absolute bottom-0 left-1/2 h-[500px] w-[1000px] -translate-x-1/2 translate-y-1/2 rounded-full bg-[var(--brand)] opacity-20 blur-[120px]"></div>
+
 	<!-- Fade overlay: transparent at top, black at bottom -->
 	<div
-		class="pointer-events-none absolute inset-0"
+		class="pointer-events-none absolute inset-0 z-20"
 		style="background: linear-gradient(to bottom, transparent 0%, black 70%);"
 	></div>
 
 	<!-- Main Footer Section -->
-	<div class="relative px-6 py-24 md:px-16 lg:px-24">
+	<div class="relative z-30 px-6 py-24 md:px-16 lg:px-24">
 		<div class="grid grid-cols-1 gap-12 md:grid-cols-2">
 			<div class="flex flex-col justify-center">
 				<span class="text-4xl font-semibold tracking-tight md:text-5xl">Rix</span>

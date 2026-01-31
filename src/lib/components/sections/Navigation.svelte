@@ -11,7 +11,7 @@
 </script>
 
 <nav
-	class="sticky top-0 z-50 w-full border-b border-[var(--grid-line-strong)] bg-white/90 backdrop-blur-md"
+	class="sticky top-0 z-50 w-full border-b border-[var(--grid-line-strong)] bg-white/70 backdrop-blur-md"
 	aria-label="Main navigation"
 >
 	<div class="mx-auto flex h-12 max-w-6xl items-center justify-between px-6 md:px-12 lg:px-16">
@@ -20,8 +20,8 @@
 			<span class="text-lg font-semibold tracking-tight text-foreground">Rix</span>
 		</a>
 
-		<!-- Navigation Menu (Desktop) -->
-		<div class="hidden items-center gap-6 md:flex">
+		<!-- Navigation Menu + CTA (Desktop) -->
+		<div class="hidden items-center gap-8 md:flex">
 			<a
 				href="/"
 				class="text-sm font-medium transition-colors duration-150 {isActive('/')
@@ -38,10 +38,6 @@
 			>
 				Changelog
 			</a>
-		</div>
-
-		<!-- CTA Button (Desktop) -->
-		<div class="hidden items-center md:flex">
 			<a
 				href="mailto:daniel.lee@tryrix.com"
 				class="inline-flex h-8 items-center justify-center rounded-full bg-foreground px-4 text-sm font-medium text-background shadow-md transition-all duration-150 hover:bg-foreground/90"

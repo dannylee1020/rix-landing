@@ -1,4 +1,11 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
+	let mounted = $state(false);
+
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <section class="mx-auto max-w-6xl bg-white px-6">
@@ -18,13 +25,19 @@
 			<div class="mx-auto max-w-xl text-center">
 				<!-- Headline -->
 				<h1
-					class="mb-8 text-3xl leading-[1.1] font-semibold tracking-tight text-foreground sm:text-4xl lg:text-6xl"
+					class="mb-8 text-3xl leading-[1.1] font-semibold tracking-tight text-foreground sm:text-4xl lg:text-6xl transition-all duration-700 ease-out {mounted
+						? 'opacity-100 translate-y-0'
+						: 'opacity-0 translate-y-6'}"
 				>
 					<span class="whitespace-nowrap">AI Search Intelligence</span><br />for Beauty Brands
 				</h1>
 
 				<!-- CTA buttons - sleek design -->
-				<div class="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-3">
+				<div
+					class="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-3 transition-all duration-700 ease-out delay-150 {mounted
+						? 'opacity-100 translate-y-0'
+						: 'opacity-0 translate-y-6'}"
+				>
 					<a
 						href="/join"
 						class="inline-flex h-11 items-center justify-center rounded-full bg-foreground px-6 text-sm font-medium text-background transition-all duration-200 hover:scale-[1.02] hover:bg-foreground/90"
