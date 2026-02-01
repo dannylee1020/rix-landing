@@ -154,7 +154,7 @@
 		<Hero />
 		<FeatureSection
 			label="AI Visibility"
-			headline="See how AI platforms<br />talk about you"
+			headline="See how AI engines<br />talk about you"
 			description="See your brand through AI's eyes - visibility rankings, product recommendations, trusted sources, and the exact language AI uses to describe you."
 			image="/overview.png"
 			imageAlt="AI Visibility Dashboard"

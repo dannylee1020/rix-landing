@@ -20,8 +20,8 @@
 	></div>
 
 	<!-- Main Footer Section -->
-	<div class="relative z-30 px-6 py-24 md:px-16 lg:px-24">
-		<div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+	<div class="relative z-30 px-6 py-24">
+		<div class="mx-auto max-w-6xl grid grid-cols-1 gap-12 md:grid-cols-2">
 			<div class="flex flex-col justify-center">
 				<span class="text-4xl font-semibold tracking-tight md:text-5xl">Rix</span>
 				<p class="mt-3 text-sm text-white/50">AI Search Intelligence for Beauty Brands</p>
@@ -51,8 +51,8 @@
 	<div class="relative border-t border-white/15"></div>
 
 	<!-- Bottom Footer -->
-	<div class="relative px-6 py-6 md:px-16 lg:px-24">
-		<div class="flex flex-col items-center gap-4 md:flex-row md:justify-between">
+	<div class="relative px-6 py-6">
+		<div class="mx-auto max-w-6xl flex flex-col items-center gap-4 md:flex-row md:justify-between">
 			<div class="text-xs text-white/40">
 				&copy; 2026 Silence Inc. All rights reserved.
 			</div>
