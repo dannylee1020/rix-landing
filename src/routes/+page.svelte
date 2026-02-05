@@ -13,7 +13,11 @@
 		ChartNoAxesColumn,
 		Search,
 		Compass,
-		FileText
+		FileText,
+		Award,
+		ExternalLink,
+		Globe,
+		BarChart3
 	} from '@lucide/svelte';
 
 	const visibilityFeatures = [
@@ -40,6 +44,33 @@
 			title: 'Sentiments',
 			description:
 				'Know how AI positions you. Is it "clean beauty" or "affordable dupe"? See the language shaping perception.'
+		}
+	];
+
+	const sourceFeatures = [
+		{
+			icon: Award,
+			title: 'Authority Ranking',
+			description:
+				'Sources scored and ranked by domain authority. See which publications AI trusts most in your category.'
+		},
+		{
+			icon: ExternalLink,
+			title: 'Full Attribution',
+			description:
+				'Every citation linked to its exact URL. Verify what AI read and what it surfaced about your brand.'
+		},
+		{
+			icon: Globe,
+			title: 'Crawl Coverage',
+			description:
+				'Every page AI analyzed to build its response — the complete research trail behind each recommendation.'
+		},
+		{
+			icon: BarChart3,
+			title: 'Citation Frequency',
+			description:
+				'Track how often each source appears across queries to spot publications with outsized influence on AI recommendations.'
 		}
 	];
 
@@ -167,6 +198,14 @@
 			image="/competition.png"
 			imageAlt="Competitive Intelligence Dashboard"
 			features={competitiveFeatures}
+		/>
+		<FeatureSection
+			label="Source Analytics"
+			headline="Trace every claim<br />back to its source"
+			description="Know which publications, articles, and pages AI relies on across your category, and where to focus your content efforts."
+			image="/sources.png"
+			imageAlt="Source Analytics Dashboard"
+			features={sourceFeatures}
 		/>
 		<FAQ />
 	</main>
