@@ -20,6 +20,14 @@
 	--brand-hover: #1e2dd4;
 	--brand-light: rgba(5, 74, 247, 0.05);
 
+	/* Section accent colors */
+	--color-visibility: hsl(230, 92%, 60%);
+	--color-visibility-light: hsla(230, 92%, 60%, 0.12);
+	--color-competitive: hsl(32, 95%, 52%);
+	--color-competitive-light: hsla(32, 95%, 52%, 0.12);
+	--color-source: hsl(162, 72%, 42%);
+	--color-source-light: hsla(162, 72%, 42%, 0.12);
+
 	/* Grid line colors */
 	--grid-line: rgba(0, 0, 0, 0.06);
 	--grid-line-strong: rgba(0, 0, 0, 0.1);
@@ -94,6 +102,14 @@
 	--sidebar-accent-foreground: oklch(0.984 0.003 247.858);
 	--sidebar-border: oklch(1 0 0 / 10%);
 	--sidebar-ring: oklch(0.551 0.027 264.364);
+
+	/* Dark mode section accent colors */
+	--color-visibility: hsl(230, 92%, 70%);
+	--color-visibility-light: hsla(230, 92%, 70%, 0.15);
+	--color-competitive: hsl(32, 95%, 62%);
+	--color-competitive-light: hsla(32, 95%, 62%, 0.15);
+	--color-source: hsl(162, 72%, 52%);
+	--color-source-light: hsla(162, 72%, 52%, 0.15);
 
 	/* Dark mode grid lines */
 	--grid-line: rgba(255, 255, 255, 0.06);

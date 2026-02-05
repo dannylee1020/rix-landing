@@ -14,16 +14,17 @@
 		image: string;
 		imageAlt: string;
 		features: Feature[];
+		accent?: string;
 	}
 
-	let { label, headline, description, image, imageAlt, features }: Props = $props();
+	let { label, headline, description, image, imageAlt, features, accent = 'var(--brand)' }: Props = $props();
 </script>
 
 <section class="mx-auto max-w-6xl px-6">
 	<!-- Header row with dotted borders - left aligned -->
 	<div class="header-row-dotted">
 		<div class="px-6 py-16 text-left md:px-10 md:py-20">
-			<span class="mb-4 block text-xs font-semibold tracking-widest text-[var(--brand)] uppercase">
+			<span class="mb-4 block text-xs font-semibold tracking-widest uppercase" style="color: {accent}">
 				{label}
 			</span>
 			<h2
@@ -62,15 +63,13 @@
 			{#each features as feature, index}
 				{@const Icon = feature.icon}
 				<div class="feature-card {index > 0 ? 'feature-card-border' : ''}">
-					<div
-						class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--brand-light)]"
-					>
-						<Icon class="h-5 w-5 text-[var(--brand)]" />
+					<div class="mb-4">
+						<Icon class="h-4 w-4" style="color: {accent}" />
 					</div>
 					<h3 class="mb-2 text-sm font-semibold text-foreground">
 						{feature.title}
 					</h3>
-					<p class="text-sm leading-relaxed text-muted-foreground">
+					<p class="text-xs leading-relaxed text-muted-foreground">
 						{feature.description}
 					</p>
 				</div>

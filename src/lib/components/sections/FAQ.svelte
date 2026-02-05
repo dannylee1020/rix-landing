@@ -72,8 +72,10 @@
 		<div class="grid-container-bordered">
 			<div class="px-6 py-24 md:px-10">
 				<!-- Section header -->
-				<div class="mx-auto max-w-xl text-center mb-12">
-					<span class="mb-3 inline-block text-xs font-semibold tracking-widest text-[var(--brand)] uppercase">
+				<div class="mx-auto mb-12 max-w-xl text-center">
+					<span
+						class="mb-3 inline-block text-xs font-semibold tracking-widest text-[var(--brand)] uppercase"
+					>
 						FAQ
 					</span>
 					<h2 class="text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
@@ -93,7 +95,10 @@
 								>
 									<span class="pr-4 text-sm font-medium text-foreground">{faq.question}</span>
 									<ChevronDown
-										class="h-4 w-4 flex-shrink-0 text-muted-foreground transition-transform duration-150 {openIndex === index ? 'rotate-180' : ''}"
+										class="h-4 w-4 flex-shrink-0 text-muted-foreground transition-transform duration-150 {openIndex ===
+										index
+											? 'rotate-180'
+											: ''}"
 									/>
 								</button>
 								{#if openIndex === index}

@@ -13,7 +13,7 @@
 		ChartNoAxesColumn,
 		Search,
 		Compass,
-		FileText,
+		ShoppingBag,
 		Award,
 		ExternalLink,
 		Globe,
@@ -25,25 +25,25 @@
 			icon: Eye,
 			title: 'Visibility',
 			description:
-				'Track when and where AI mentions your brand across skincare routines, ingredient searches, and "best of" lists.'
+				'Track when and where AI mentions your brand across routines, ingredients, and "best of" lists.'
 		},
 		{
 			icon: MessageSquare,
 			title: 'Product Recommendations',
 			description:
-				'See which SKUs get recommended, for which beauty queries, and which products AI overlooks.'
+				'See which SKUs get recommended, for which queries, and which products AI overlooks.'
 		},
 		{
-			icon: FileText,
-			title: 'Sources',
+			icon: ShoppingBag,
+			title: 'Retailer Mapping',
 			description:
-				'Discover the publications and content AI trusts when recommending products in your category.'
+				'See which retailers AI features for your products and where listings are missing.'
 		},
 		{
 			icon: ThumbsUp,
 			title: 'Sentiments',
 			description:
-				'Know how AI positions you. Is it "clean beauty" or "affordable dupe"? See the language shaping perception.'
+				'Know how AI positions you — "clean beauty" or "affordable dupe"? See the language shaping perception.'
 		}
 	];
 
@@ -51,26 +51,22 @@
 		{
 			icon: Award,
 			title: 'Authority Ranking',
-			description:
-				'Sources scored and ranked by domain authority. See which publications AI trusts most in your category.'
+			description: 'See which publications AI trusts most in your category.'
 		},
 		{
 			icon: ExternalLink,
 			title: 'Full Attribution',
-			description:
-				'Every citation linked to its exact URL. Verify what AI read and what it surfaced about your brand.'
+			description: 'Verify what AI read and what it surfaced about your brand.'
 		},
 		{
 			icon: Globe,
 			title: 'Crawl Coverage',
-			description:
-				'Every page AI analyzed to build its response — the complete research trail behind each recommendation.'
+			description: 'The complete research trail behind each recommendation.'
 		},
 		{
 			icon: BarChart3,
 			title: 'Citation Frequency',
-			description:
-				'Track how often each source appears across queries to spot publications with outsized influence on AI recommendations.'
+			description: 'Track and spot publications with outsized influence on AI recommendations.'
 		}
 	];
 
@@ -79,25 +75,25 @@
 			icon: ChartNoAxesColumn,
 			title: 'Category Competition',
 			description:
-				'See how you rank against competitors across your category. Know where you lead and where you fall behind.'
+				'See how you rank against competitors. Know where you lead and where you fall behind.'
 		},
 		{
 			icon: Search,
 			title: 'Topic Competition',
 			description:
-				'Track who dominates specific queries like "best retinol serum" or "hydrating moisturizer for dry skin."'
+				'Track who dominates specific queries like "best retinol serum" or "hydrating moisturizer."'
 		},
 		{
 			icon: Compass,
 			title: 'Head to Head',
 			description:
-				'Deep dive into any competitor. Compare recommendations, positioning, and the sources driving their visibility.'
+				'Compare any competitor on recommendations, positioning, and the sources driving their visibility.'
 		},
 		{
 			icon: TrendingUp,
 			title: 'Actionable Insights',
 			description:
-				'Spot gaps, uncover opportunities, and get clear next steps on how to close the distance.'
+				'Spot gaps, uncover opportunities, and get clear next steps to close the distance.'
 		}
 	];
 </script>
@@ -186,10 +182,11 @@
 		<FeatureSection
 			label="AI Visibility"
 			headline="See how AI engines<br />talk about you"
-			description="See your brand through AI's eyes - visibility rankings, product recommendations, trusted sources, and the exact language AI uses to describe you."
+			description="See your brand through AI's eyes - visibility rankings, product recommendations, retail channels, and the exact language AI uses to describe you."
 			image="/overview.png"
 			imageAlt="AI Visibility Dashboard"
 			features={visibilityFeatures}
+			accent="var(--color-visibility)"
 		/>
 		<FeatureSection
 			label="Competitive Intelligence"
@@ -198,6 +195,7 @@
 			image="/competition.png"
 			imageAlt="Competitive Intelligence Dashboard"
 			features={competitiveFeatures}
+			accent="var(--color-competitive)"
 		/>
 		<FeatureSection
 			label="Source Analytics"
@@ -206,6 +204,7 @@
 			image="/sources.png"
 			imageAlt="Source Analytics Dashboard"
 			features={sourceFeatures}
+			accent="var(--color-source)"
 		/>
 		<FAQ />
 	</main>
