@@ -29,7 +29,7 @@
 				<h1 class="text-foreground mb-4 text-4xl font-bold tracking-tight md:text-5xl">
 					Privacy Policy
 				</h1>
-				<p class="text-muted-foreground text-base">Last Updated: December 31, 2025</p>
+				<p class="text-muted-foreground text-base">Last Updated: February 15, 2026</p>
 			</div>
 		</div>
 	</header>
@@ -151,17 +151,47 @@
 
 						<div class="flex flex-col gap-4">
 							<h3 class="text-foreground text-lg font-medium">
-								Information From E-commerce Integrations
+								Information From Google Services Integration
 							</h3>
+							<p class="text-foreground text-base leading-relaxed">
+								When you connect your Google account through OAuth 2.0 authorization, we access
+								data from the following Google services using read-only permissions:
+							</p>
 							<ul class="text-foreground flex flex-col gap-3 text-base leading-relaxed">
 								<li
 									class="before:bg-border relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full"
 								>
-									<span class="font-medium">Traffic Analytics:</span> When you install our tracking integration,
-									we collect anonymized visitor data from your website to identify traffic originating
-									from AI platforms, including referrer information, session behavior, and conversion
-									events.
+									<span class="font-medium">Google Search Console:</span> We access search performance
+									data for your verified website, including search queries, impressions, clicks, and
+									click-through rates. This data is used to generate targeted prompts for AI brand
+									monitoring. We request the <code class="text-[13px] bg-muted/50 px-1 py-0.5 rounded">webmasters.readonly</code> scope
+									and do not modify any data in your Search Console account.
 								</li>
+								<li
+									class="before:bg-border relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full"
+								>
+									<span class="font-medium">Google Analytics:</span> We access traffic and session data
+									from your Google Analytics 4 property, specifically to identify and analyze traffic
+									originating from AI platforms. This includes session counts, user counts, pageviews,
+									and traffic source information. We request the <code class="text-[13px] bg-muted/50 px-1 py-0.5 rounded">analytics.readonly</code> scope
+									and do not modify any data in your Analytics account.
+								</li>
+								<li
+									class="before:bg-border relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full"
+								>
+									<span class="font-medium">OAuth Tokens:</span> When you authorize access, we securely
+									store OAuth access and refresh tokens to maintain the connection to your Google
+									services. Tokens are encrypted at rest and are immediately deleted when you
+									disconnect your Google account.
+								</li>
+							</ul>
+						</div>
+
+						<div class="flex flex-col gap-4">
+							<h3 class="text-foreground text-lg font-medium">
+								Information From Other Integrations
+							</h3>
+							<ul class="text-foreground flex flex-col gap-3 text-base leading-relaxed">
 								<li
 									class="before:bg-border relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full"
 								>
@@ -224,6 +254,47 @@
 							We do not use your data to train machine learning models. Your product catalog and
 							analytics data remain dedicated to providing services to you.
 						</p>
+
+						<div class="flex flex-col gap-4">
+							<h3 class="text-foreground text-lg font-medium">
+								Google API Services User Data Policy
+							</h3>
+							<p class="text-foreground text-base leading-relaxed">
+								Rix's use and transfer of information received from Google APIs adheres to the
+								<a
+									href="https://developers.google.com/terms/api-services-user-data-policy"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="font-medium text-[var(--brand)] transition-colors duration-150 hover:underline"
+									>Google API Services User Data Policy</a
+								>, including the Limited Use requirements. Specifically:
+							</p>
+							<ul class="text-foreground flex flex-col gap-3 text-base leading-relaxed">
+								<li
+									class="before:bg-border relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full"
+								>
+									We only use Google data to provide and improve the features you explicitly authorized,
+									such as keyword analysis and AI traffic monitoring.
+								</li>
+								<li
+									class="before:bg-border relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full"
+								>
+									We do not transfer Google user data to third parties unless necessary to provide
+									our Services, required by law, or with your explicit consent.
+								</li>
+								<li
+									class="before:bg-border relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full"
+								>
+									We do not use Google user data for serving advertisements or building advertising profiles.
+								</li>
+								<li
+									class="before:bg-border relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full"
+								>
+									We do not allow humans to read Google user data unless you provide explicit consent,
+									it is necessary for security purposes, or it is required to comply with applicable law.
+								</li>
+							</ul>
+						</div>
 					</div>
 				</section>
 
@@ -302,6 +373,15 @@
 							<li
 								class="before:bg-border relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full"
 							>
+								<span class="font-medium">Google API Data:</span> Search Console keywords are stored
+								as encrypted files in cloud storage. Google Analytics traffic data is stored in our
+								database for historical trend analysis. OAuth tokens are encrypted at rest. When you
+								disconnect your Google account, all associated tokens are immediately deleted and
+								synced data is removed within 30 days.
+							</li>
+							<li
+								class="before:bg-border relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full"
+							>
 								<span class="font-medium">Usage Logs:</span> Technical logs are retained for up to 90
 								days for security and debugging purposes.
 							</li>
@@ -361,6 +441,21 @@
 							>
 								<span class="font-medium">Object to Processing:</span> Object to certain types of processing,
 								including direct marketing.
+							</li>
+							<li
+								class="before:bg-border relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full"
+							>
+								<span class="font-medium">Revoke Third-Party Access:</span> Disconnect integrated services
+								(such as Google) at any time from your account settings. This immediately revokes
+								our access to that service's data and deletes stored OAuth tokens. You may also
+								revoke access directly from your
+								<a
+									href="https://myaccount.google.com/permissions"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="font-medium text-[var(--brand)] transition-colors duration-150 hover:underline"
+									>Google Account permissions</a
+								>.
 							</li>
 						</ul>
 						<p class="text-foreground text-base leading-relaxed">

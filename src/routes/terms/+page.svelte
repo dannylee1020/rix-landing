@@ -24,7 +24,7 @@
 			<div class="mx-auto max-w-3xl">
 				<p class="text-muted-foreground mb-3 text-sm font-medium uppercase tracking-wider">Legal</p>
 				<h1 class="text-foreground mb-4 text-4xl font-bold tracking-tight md:text-5xl">Terms of Service</h1>
-				<p class="text-muted-foreground text-base">Last Updated: December 31, 2025</p>
+				<p class="text-muted-foreground text-base">Last Updated: February 15, 2026</p>
 			</div>
 		</div>
 	</header>
@@ -111,6 +111,7 @@
 								<li class="relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-border">Track traffic from AI platforms to your e-commerce store</li>
 								<li class="relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-border">Attribute revenue and conversions to AI-driven customer journeys</li>
 								<li class="relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-border">Connect your product catalog and e-commerce platform integrations</li>
+								<li class="relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-border">Connect third-party services such as Google Search Console and Google Analytics to enhance your analytics</li>
 								<li class="relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-border">Generate reports and export analytics data for your internal use</li>
 							</ul>
 						</div>
@@ -133,9 +134,15 @@
 
 						<p class="text-foreground text-base leading-relaxed">
 							<span class="font-medium">Third-Party Platforms.</span> Our Services interact with third-party AI
-							platforms and e-commerce systems. Your use of these third-party services is subject
-							to their respective terms and policies. We are not responsible for the availability,
-							accuracy, or policies of third-party platforms.
+							platforms, e-commerce systems, and analytics services. When you connect third-party
+							accounts (such as Google) through OAuth authorization, you grant us permission to
+							access data from those services on your behalf, subject to the scopes you authorize.
+							You are responsible for maintaining your authorizations and may revoke access at any
+							time from your account settings. Your use of third-party services is subject to their
+							respective terms and policies, including the
+							<a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" class="font-medium text-[var(--brand)] hover:underline transition-colors duration-150">Google Terms of Service</a>
+							where applicable. We are not responsible for the availability, accuracy, or policies
+							of third-party platforms.
 						</p>
 					</div>
 				</section>
@@ -150,9 +157,10 @@
 					<div class="ml-8 flex flex-col gap-5">
 						<p class="text-foreground text-base leading-relaxed">
 							<span class="font-medium">Ownership.</span> You retain all ownership rights to the data you provide
-							to us, including your product catalog, brand information, and any data from your
-							connected e-commerce platforms ("Customer Data"). We do not claim ownership of your
-							Customer Data.
+							to us or that we access on your behalf through authorized integrations, including
+							your product catalog, brand information, data from connected e-commerce platforms,
+							and data retrieved from third-party services such as Google Search Console and
+							Google Analytics ("Customer Data"). We do not claim ownership of your Customer Data.
 						</p>
 						<p class="text-foreground text-base leading-relaxed">
 							<span class="font-medium">License to Us.</span> You grant us a limited, non-exclusive, worldwide
@@ -178,6 +186,14 @@
 							AI platforms and the data you provide. AI platform responses may change over time
 							and may not always be accurate. You should not rely solely on our Output for critical
 							business decisions without independent verification.
+						</p>
+						<p class="text-foreground text-base leading-relaxed">
+							<span class="font-medium">Third-Party Integration Data.</span> When you connect
+							third-party services, we access and store data from those services to provide our
+							analytics features. This data is subject to the third-party provider's terms and
+							policies. If you disconnect an integration, we will stop accessing new data from
+							that service and delete stored access credentials immediately. Previously synced
+							data will be deleted within 30 days unless you request earlier deletion.
 						</p>
 					</div>
 				</section>

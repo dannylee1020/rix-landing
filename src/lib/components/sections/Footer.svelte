@@ -48,10 +48,10 @@
 	</div>
 
 	<!-- Divider -->
-	<div class="relative border-t border-white/15"></div>
+	<div class="relative z-30 border-t border-white/15"></div>
 
 	<!-- Bottom Footer -->
-	<div class="relative px-6 py-6">
+	<div class="relative z-30 px-6 py-6">
 		<div class="mx-auto max-w-6xl flex flex-col items-center gap-4 md:flex-row md:justify-between">
 			<div class="text-xs text-white/40">
 				&copy; 2026 Silence Inc. All rights reserved.
