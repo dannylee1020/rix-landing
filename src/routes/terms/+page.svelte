@@ -7,7 +7,7 @@
 	<title>Terms of Service - Rix</title>
 	<meta
 		name="description"
-		content="Rix terms of service. Read our usage terms and agreements for the AI search intelligence platform for e-commerce brands."
+		content="Rix terms of service. Read our usage terms and agreements for the AI search intelligence platform for beauty brands."
 	/>
 	<link rel="canonical" href="https://tryrix.com/terms" />
 </svelte:head>

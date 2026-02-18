@@ -117,12 +117,25 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://tryrix.com/" />
 	<meta property="og:site_name" content="Rix" />
+	<meta property="og:image" content="https://tryrix.com/og.png" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Rix - AI Search Intelligence for Beauty Brands" />
 	<meta
 		name="twitter:description"
 		content="AI search intelligence for beauty brands. See how AI recommends products, which brands dominate your category, and why consumers find your competitors instead of you."
 	/>
+	<meta name="twitter:image" content="https://tryrix.com/og.png" />
+
+	<!-- Organization Schema Markup -->
+	{@html `<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "Rix",
+		"url": "https://tryrix.com",
+		"description": "AI search intelligence for beauty brands. Track how AI recommends products, analyze competitive positioning, and understand the sources driving AI visibility."
+	}
+	</script>`}
 
 	<!-- FAQ Schema Markup -->
 	{@html `<script type="application/ld+json">

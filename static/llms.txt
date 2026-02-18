@@ -1,0 +1,21 @@
+# Rix
+
+> AI search intelligence for beauty brands. Rix tracks how AI engines like ChatGPT, Perplexity, Google AI Overviews, and Claude recommend products, so beauty brands can understand and improve their AI visibility.
+
+Rix monitors AI-generated responses for queries relevant to beauty products — skincare routines, ingredient searches, product comparisons, and "best of" lists. The platform tracks brand mentions, product recommendations, sentiment, and source citations across major AI engines.
+
+## Core Capabilities
+
+- **AI Visibility**: Track when and where AI mentions your brand, which SKUs get recommended, which retailers AI features, and the language AI uses to describe your products.
+- **Competitive Intelligence**: Category and topic-level competition analysis, head-to-head comparisons, and share of voice for beauty queries.
+- **Source Analytics**: See which publications AI trusts, full attribution for every recommendation, crawl coverage, and citation frequency analysis.
+
+## Who It's For
+
+Beauty brands selling skincare, makeup, haircare, or bodycare online — from $5M to $500M+ in revenue.
+
+## Links
+
+- [Homepage](https://tryrix.com/)
+- [Privacy Policy](https://tryrix.com/privacy)
+- [Terms of Service](https://tryrix.com/terms)

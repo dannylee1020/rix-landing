@@ -7,7 +7,7 @@
 	<title>Privacy Policy - Rix</title>
 	<meta
 		name="description"
-		content="Rix privacy policy. Learn how we collect, use, and protect your data when using our AI search intelligence platform for e-commerce."
+		content="Rix privacy policy. Learn how we collect, use, and protect your data when using our AI search intelligence platform for beauty brands."
 	/>
 	<link rel="canonical" href="https://tryrix.com/privacy" />
 </svelte:head>
