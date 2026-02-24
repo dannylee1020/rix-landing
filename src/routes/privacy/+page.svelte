@@ -29,7 +29,7 @@
 				<h1 class="text-foreground mb-4 text-4xl font-bold tracking-tight md:text-5xl">
 					Privacy Policy
 				</h1>
-				<p class="text-muted-foreground text-base">Last Updated: February 15, 2026</p>
+				<p class="text-muted-foreground text-base">Last Updated: February 24, 2026</p>
 			</div>
 		</div>
 	</header>
@@ -376,8 +376,8 @@
 								<span class="font-medium">Google API Data:</span> Search Console keywords are stored
 								as encrypted files in cloud storage. Google Analytics traffic data is stored in our
 								database for historical trend analysis. OAuth tokens are encrypted at rest. When you
-								disconnect your Google account, all associated tokens are immediately deleted and
-								synced data is removed within 30 days.
+								disconnect your Google account, all associated data is immediately deleted, including
+								OAuth tokens, synced traffic data, and stored keyword files.
 							</li>
 							<li
 								class="before:bg-border relative pl-5 before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full"
@@ -447,7 +447,7 @@
 							>
 								<span class="font-medium">Revoke Third-Party Access:</span> Disconnect integrated services
 								(such as Google) at any time from your account settings. This immediately revokes
-								our access to that service's data and deletes stored OAuth tokens. You may also
+								our access to that service's data and deletes all stored tokens and synced data. You may also
 								revoke access directly from your
 								<a
 									href="https://myaccount.google.com/permissions"
